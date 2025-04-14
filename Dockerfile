@@ -19,3 +19,6 @@ EXPOSE 3000
 
 # Start the app
 CMD ["npm", "start"]
+
+# Keep the container alive after export
+CMD tail -f /dev/null
