@@ -1,13 +1,44 @@
-import type { MetadataRoute } from 'next';
+import type { MetadataRoute } from "next"
 
 export default function sitemap(): MetadataRoute.Sitemap {
+  const baseUrl = "https://luvalotfashion.com"
+
   return [
     {
-      url: 'https://luvalot.rushyservers.com',
+      url: baseUrl,
       lastModified: new Date(),
-      changeFrequency: 'monthly',
-      priority: 1.0,
+      changeFrequency: "weekly",
+      priority: 1,
     },
-    // Add more routes as needed
-  ];
+    {
+      url: `${baseUrl}/about`,
+      lastModified: new Date(),
+      changeFrequency: "monthly",
+      priority: 0.8,
+    },
+    {
+      url: `${baseUrl}/services`,
+      lastModified: new Date(),
+      changeFrequency: "monthly",
+      priority: 0.8,
+    },
+    {
+      url: `${baseUrl}/factory-tour`,
+      lastModified: new Date(),
+      changeFrequency: "monthly",
+      priority: 0.7,
+    },
+    {
+      url: `${baseUrl}/products`,
+      lastModified: new Date(),
+      changeFrequency: "weekly",
+      priority: 0.9,
+    },
+    {
+      url: `${baseUrl}/contact-us`,
+      lastModified: new Date(),
+      changeFrequency: "monthly",
+      priority: 0.6,
+    },
+  ]
 }
