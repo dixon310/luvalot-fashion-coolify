@@ -50,33 +50,6 @@ export default function Home() {
     },
   ]
 
-  const certificates = [
-    {
-      id: "gots",
-      title: "GOTS Certified",
-      description: "Global Organic Textile Standard certification for organic textiles.",
-      imageSrc: "/placeholder.svg?height=200&width=200&text=GOTS",
-    },
-    {
-      id: "oeko-tex",
-      title: "OEKO-TEX",
-      description: "Certifies textiles tested for harmful substances.",
-      imageSrc: "/placeholder.svg?height=200&width=200&text=OEKO-TEX",
-    },
-    {
-      id: "iso9001",
-      title: "ISO 9001",
-      description: "International standard for quality management systems.",
-      imageSrc: "/placeholder.svg?height=200&width=200&text=ISO9001",
-    },
-    {
-      id: "bci",
-      title: "BCI Member",
-      description: "Better Cotton Initiative promoting sustainable cotton production.",
-      imageSrc: "/placeholder.svg?height=200&width=200&text=BCI",
-    },
-  ]
-
   const faqs = [
     {
       question: "What are your minimum order quantities (MOQs)?",
@@ -213,24 +186,6 @@ export default function Home() {
               >
                 Learn More About Our Process
               </Link>
-            </div>
-          </div>
-        </section>
-
-        {/* Certificates Section */}
-        <section className="py-20 px-4">
-          <div className="container mx-auto">
-            <h2 className="text-2xl font-light text-center uppercase tracking-widest mb-16">Our Certifications</h2>
-
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-              {certificates.map((cert) => (
-                <CertificateCard
-                  key={cert.id}
-                  title={cert.title}
-                  description={cert.description}
-                  imageSrc={cert.imageSrc}
-                />
-              ))}
             </div>
           </div>
         </section>
@@ -378,4 +333,3 @@ export default function Home() {
     </>
   )
 }
-
