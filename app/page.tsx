@@ -56,10 +56,6 @@ export default function Home() {
       answer: "Our main manufacturing facilities are located in Guangzhou, China and Ho Chi Minh City, Vietnam.",
     },
     {
-      question: "What are your minimum order quantities (MOQs)?",
-      answer: "For development orders, we require 300 pieces per style across two colours. For wholesale orders, the minimum is 100 pieces per style, per colour.",
-    },
-    {
       question: "Do you specialise in any particular types of dresses?",
       answer: "We specialise in a wide range of fashion apparel, including dresses (maxi, midi, mini), tops, skirts, bodysuits, shorts, jackets, and pants — for both casual and occasion wear.",
     },
@@ -74,10 +70,6 @@ export default function Home() {
     {
       question: "What fabrics do you commonly use for dresses?",
       answer: "We work with a wide variety of fabrics— including high stretch polyester, satin, viscose, chiffon, linen, velvet, woven, knit, lace, mesh and more.",
-    },
-    {
-      question: "What are your typical lead times?",
-      answer: "For samples, our typical lead time is 2-3 weeks. For bulk production, it's 3-4 weeks depending on the order size and complexity.",
     },
     {
       question: "Do you offer services for custom prints, embroidery, or beading?",
