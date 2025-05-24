@@ -52,29 +52,56 @@ export default function Home() {
 
   const faqs = [
     {
+      question: "Where is your factory located?",
+      answer: "Our main manufacturing facilities are located in Guangzhou, China and Ho Chi Minh City, Vietnam.",
+    },
+    {
       question: "What are your minimum order quantities (MOQs)?",
-      answer:
-        "Our MOQs vary by product type, but we typically start at 300 pieces per style and color. We also offer flexible solutions for smaller brands looking to start with lower quantities.",
+      answer: "For development orders, we require 300 pieces per style across two colours. For wholesale orders, the minimum is 100 pieces per style, per colour.",
     },
     {
-      question: "What is your typical lead time?",
-      answer:
-        "Our standard lead time is 45-60 days from order confirmation to shipping. However, we offer expedited services for time-sensitive projects, with lead times as short as 30 days.",
+      question: "Do you specialise in any particular types of dresses?",
+      answer: "We specialise in a wide range of fashion apparel, including dresses (maxi, midi, mini), tops, skirts, bodysuits, shorts, jackets, and pants — for both casual and occasion wear.",
     },
     {
-      question: "Do you offer sustainable fabric options?",
-      answer:
-        "Yes, we offer a wide range of sustainable fabrics including organic cotton, recycled polyester, Tencel, hemp, and other eco-friendly materials. We're committed to supporting brands in their sustainability journey.",
+      question: "Do you offer full package production or only CMT services?",
+      answer: "Yes, we offer full-package production, including design, sourcing, fitting, quality control, and delivery.",
     },
     {
-      question: "Which countries do you currently work with?",
-      answer:
-        "We work with customers globally, including the USA, UK, Australia, Mexico, Malaysia, Thailand, and various European countries. Our international experience allows us to navigate different market requirements effectively.",
+      question: "Can you source fabrics, linings, and trims?",
+      answer: "Yes, we can source all materials, including fabrics, linings, zippers, buttons, and embellishments. We also work with certified recyclable materials.",
     },
     {
-      question: "Can you help with design and development?",
-      answer:
-        "Our in-house design team can help develop your ideas from concept to finished product. We offer full design services, tech pack creation, pattern making, and sample development.",
+      question: "What fabrics do you commonly use for dresses?",
+      answer: "We work with a wide variety of fabrics— including high stretch polyester, satin, viscose, chiffon, linen, velvet, woven, knit, lace, mesh and more.",
+    },
+    {
+      question: "What are your typical lead times?",
+      answer: "For samples, our typical lead time is 2-3 weeks. For bulk production, it's 3-4 weeks depending on the order size and complexity.",
+    },
+    {
+      question: "Do you offer services for custom prints, embroidery, or beading?",
+      answer: "Yes, we offer custom prints, embroidery, and beading services.",
+    },
+    {
+      question: "Do you provide custom labels, hangtags, and packaging?",
+      answer: "Yes, we can provide custom labels, hangtags, and packaging based on your brand requirements.",
+    },
+    {
+      question: "Do you manage shipping and export documentation?",
+      answer: "Yes, we handle all logistics, including shipping and export documentation.",
+    },
+    {
+      question: "Do you have a website or digital catalogue?",
+      answer: "We don't have a public website, but you can join our mailing list to receive weekly updates on new styles and collections.",
+    },
+    {
+      question: "What certifications or audits does your facility hold?",
+      answer: "Our facilities are SMETA-audited and SEDEX-compliant.",
+    },
+    {
+      question: "How do you typically collaborate with new fashion clients?",
+      answer: "We tailor our collaboration process to each customer's preferences. Some customers work with us through tech packs, sketches, or mood boards, while others choose from our pre-developed or in-stock designs.",
     },
   ]
 
