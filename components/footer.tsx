@@ -10,7 +10,7 @@ export default function Footer() {
           <div>
             <h3 className="font-medium text-lg uppercase tracking-wider mb-4">About Us</h3>
             <p className="text-neutral-600 text-sm mb-4">
-              Luvalot Clothing is a premier OEM and ODM fashion provider with 15 years of experience, specializing in
+              MIYO Fashion is a premier OEM and ODM fashion provider with 15 years of experience, specializing in
               creating unique designs for clothing brands worldwide.
             </p>
             <div className="flex space-x-4">
@@ -140,7 +140,7 @@ export default function Footer() {
 
         <div className="border-t border-gray-200 pt-8 flex flex-col md:flex-row justify-between items-center">
           <p className="text-xs text-neutral-500 mb-4 md:mb-0">
-            © {new Date().getFullYear()} Luvalot Fashion. All rights reserved.
+            © {new Date().getFullYear()} MIYO Fashion. All rights reserved.
           </p>
 
           <div className="flex space-x-6 text-xs uppercase tracking-wider">

@@ -7,7 +7,7 @@ export const metadata: Metadata = {
   description:
     "Take a virtual tour of our state-of-the-art manufacturing facilities where we bring fashion designs to life with precision and care.",
   openGraph: {
-    title: "Factory Tour | Luvalot Fashion",
+    title: "Factory Tour | MIYO Fashion",
     description:
       "Take a virtual tour of our state-of-the-art manufacturing facilities where we bring fashion designs to life with precision and care.",
   },

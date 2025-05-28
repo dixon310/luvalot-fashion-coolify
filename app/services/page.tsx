@@ -8,7 +8,7 @@ export const metadata: Metadata = {
   description:
     "Explore our premium manufacturing solutions including private label manufacturing, design & development, and sustainable production for fashion brands.",
   openGraph: {
-    title: "Fashion Manufacturing Services | Luvalot Fashion",
+    title: "Fashion Manufacturing Services | MIYO Fashion",
     description:
       "Explore our premium manufacturing solutions including private label manufacturing, design & development, and sustainable production for fashion brands.",
   },

@@ -78,8 +78,8 @@ export default function Header() {
           <div className="w-full flex justify-between items-center md:justify-center">
             <Link href="/" className="mb-4">
               <div className="text-center">
-                <h1 className="text-3xl font-normal tracking-widest uppercase">LUVALOT</h1>
-                <p className="text-sm italic font-light">Clothing</p>
+                <h1 className="text-3xl font-normal tracking-widest uppercase">MIYO</h1>
+                <p className="text-sm italic font-light">Fashion</p>
               </div>
             </Link>
 
@@ -121,8 +121,8 @@ export default function Header() {
             <div className="flex justify-between items-center mb-8">
               <Link href="/" onClick={() => setIsMenuOpen(false)}>
                 <div className="text-center">
-                  <h1 className="text-2xl font-normal tracking-widest uppercase">LUVALOT</h1>
-                  <p className="text-xs italic font-light">Clothing</p>
+                  <h1 className="text-2xl font-normal tracking-widest uppercase">MIYO</h1>
+                  <p className="text-xs italic font-light">Fashion</p>
                 </div>
               </Link>
               <button className="p-2 focus:outline-none" onClick={() => setIsMenuOpen(false)} aria-label="Close menu">

@@ -12,7 +12,7 @@ const montserrat = Montserrat({
 })
 
 export const metadata: Metadata = {
-  title: "Luvalot Clothing - OEM and ODM Fashion Provider",
+  title: "MIYO Fashion - OEM and ODM Fashion Provider",
   description: "We protect our clients' designs strictly and all the below are from our own design team.",
     generator: 'v0.dev'
 }
@@ -29,7 +29,7 @@ export default function RootLayout({
           rel="stylesheet"
           href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&display=swap"
         />
-        <link rel="canonical" href="https://luvalotfashion.com" />
+        <link rel="canonical" href="https://miyofashion.com" />
       </head>
       <body className={montserrat.className}>
         <Header />

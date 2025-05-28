@@ -7,7 +7,7 @@ export const metadata: Metadata = {
   description:
     "Explore our collection of high-quality fashion products including dresses, tops, skirts, and pants manufactured with precision and care.",
   openGraph: {
-    title: "Fashion Products | Luvalot Fashion",
+    title: "Fashion Products | MIYO Fashion",
     description:
       "Explore our collection of high-quality fashion products including dresses, tops, skirts, and pants manufactured with precision and care.",
   },

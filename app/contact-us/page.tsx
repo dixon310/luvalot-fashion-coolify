@@ -77,7 +77,7 @@ export default function ContactUs() {
           email,
           subject,
           message,
-          from_name: "Luvalot Clothing Contact Form",
+          from_name: "MIYO Fashion Contact Form",
         }),
       })
 
