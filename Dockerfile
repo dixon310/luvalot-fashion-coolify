@@ -4,11 +4,11 @@ FROM node:20
 # Create app directory
 WORKDIR /app
 
-# Copy package files and install dependencies
+# Install dependencies first (better cache)
 COPY package*.json ./
 RUN npm install
 
-# Copy the entire app
+# Copy the rest of the app
 COPY . .
 
 # Build the app
@@ -19,6 +19,3 @@ EXPOSE 3000
 
 # Start the app
 CMD ["npm", "start"]
-
-# Keep the container alive after export
-CMD tail -f /dev/null
