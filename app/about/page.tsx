@@ -4,11 +4,11 @@ import type { Metadata } from "next"
 export const metadata: Metadata = {
   title: "About Us",
   description:
-    "Learn about Luvalot Fashion, our story, values, and team. We provide high-quality OEM and ODM services with sustainable and ethical manufacturing practices.",
+    "Learn about MIYO Fashion, our story, values, and team. We provide high-quality OEM and ODM services with sustainable and ethical manufacturing practices.",
   openGraph: {
-    title: "About Luvalot Fashion",
+    title: "About MIYO Fashion",
     description:
-      "Learn about Luvalot Fashion, our story, values, and team. We provide high-quality OEM and ODM services with sustainable and ethical manufacturing practices.",
+      "Learn about MIYO Fashion, our story, values, and team. We provide high-quality OEM and ODM services with sustainable and ethical manufacturing practices.",
   },
 }
 
@@ -29,7 +29,7 @@ export default function About() {
           <h2 className="text-2xl font-light uppercase tracking-widest mb-8 text-center">Our Story</h2>
 
           <p className="text-neutral-600 mb-6">
-            Luvalot Clothing was founded with a vision to provide high-quality OEM and ODM services to fashion brands
+            MIYO Fashion was founded with a vision to provide high-quality OEM and ODM services to fashion brands
             around the world. With years of experience in the fashion industry, our team understands the importance of
             quality, design, and timely delivery.
           </p>
@@ -41,7 +41,7 @@ export default function About() {
           </p>
 
           <p className="text-neutral-600 mb-6">
-            At Luvalot Clothing, we believe in sustainable and ethical manufacturing practices. We source our materials
+            At MIYO Fashion, we believe in sustainable and ethical manufacturing practices. We source our materials
             responsibly and ensure fair working conditions for all our employees. Our goal is not just to create
             beautiful garments but to do so in a way that respects both people and the planet.
           </p>
