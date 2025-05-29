@@ -1,5 +1,5 @@
-# Use official Node image as the build stage
-FROM node:20 AS build
+# Use official Node image
+FROM node:20
 
 # Create app directory
 WORKDIR /app
@@ -8,15 +8,17 @@ WORKDIR /app
 COPY package*.json ./
 RUN npm install
 
-# Copy the entire app and build
+# Copy the entire app
 COPY . .
+
+# Build the app
 RUN npm run build
 
-# Use a smaller base image for the runtime
-FROM nginx:alpine
+# Expose the port Next.js uses
+EXPOSE 3000
 
-# Expose the port Nginx uses
-EXPOSE 80
+# Start the app
+CMD ["npm", "start"]
 
-# Start Nginx server
-CMD ["nginx", "-g", "daemon off;"]
+# Keep the container alive after export
+CMD tail -f /dev/null
