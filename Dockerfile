@@ -15,9 +15,6 @@ RUN npm run build
 # Use a smaller base image for the runtime
 FROM nginx:alpine
 
-# Copy the static files from the build stage
-COPY --from=build /app/out /usr/share/nginx/html
-
 # Expose the port Nginx uses
 EXPOSE 80
 
