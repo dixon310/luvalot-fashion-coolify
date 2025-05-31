@@ -139,7 +139,10 @@ export default function ContactUs() {
               <Phone className="mr-4 text-neutral-400" />
               <div>
                 <h3 className="font-medium">Phone</h3>
-                <p className="text-neutral-600">+1 (123) 456-7890</p>
+                <p className="text-neutral-600">
+                  Enzo: +86 176 6509 2011 (English & Chinese)<br />
+                  Hong Xia: +86 159 1840 5017 (Chinese only)
+                </p>
               </div>
             </div>
 

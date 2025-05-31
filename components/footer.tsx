@@ -128,7 +128,10 @@ export default function Footer() {
               </li>
               <li className="flex items-start">
                 <Phone size={16} className="text-neutral-500 mr-2 mt-0.5" />
-                <span className="text-neutral-600">+1 (123) 456-7890</span>
+                <span className="text-neutral-600">
+                  Enzo: +86 176 6509 2011 (English & Chinese)<br />
+                  Hong Xia: +86 159 1840 5017 (Chinese only)
+                </span>
               </li>
               <li className="flex items-start">
                 <MapPin size={16} className="text-neutral-500 mr-2 mt-0.5" />
