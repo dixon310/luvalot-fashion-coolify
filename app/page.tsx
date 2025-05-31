@@ -55,8 +55,8 @@ export default function Home() {
       question: "Where is your factory located? (City & Country)",
       answer: (
         <>
-          Guangzhou, China<br />
-          Ho Chi Minh City, Vietnam
+          <strong>China:</strong>Guangzhou<br />
+          <strong>Vietnam:</strong>Ho Chi Minh City
         </>
       ),
     },
