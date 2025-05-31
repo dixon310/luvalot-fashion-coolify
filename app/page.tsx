@@ -52,24 +52,51 @@ export default function Home() {
 
   const faqs = [
     {
-      question: "Where is your factory located?",
-      answer: "Our main manufacturing facilities are located in Guangzhou, China and Ho Chi Minh City, Vietnam.",
+      question: "Where is your factory located? (City & Country)",
+      answer: (
+        <>
+          Guangzhou, China<br />
+          Ho Chi Minh City, Vietnam
+        </>
+      ),
     },
     {
-      question: "Do you specialise in any particular types of dresses?",
-      answer: "We specialise in a wide range of fashion apparel, including dresses (maxi, midi, mini), tops, skirts, bodysuits, shorts, jackets, and pants — for both casual and occasion wear.",
+      question: "What is your minimum order quantity (MOQ) per style and per total order?",
+      answer: (
+        <>
+          <strong>Development:</strong> 300 pieces per style, across two colours<br />
+          <strong>Wholesale:</strong> 100 pieces per style, per colour
+        </>
+      ),
     },
     {
-      question: "Do you offer full package production or only CMT services?",
-      answer: "Yes, we offer full-package production, including design, sourcing, fitting, quality control, and delivery.",
+      question: "Do you specialise in any particular types of dresses? (e.g., maxi, wrap, occasion, casual)",
+      answer:
+        "We specialise in a wide range of fashion apparel, including dresses (maxi, midi, mini), tops, skirts, bodysuits, shorts, jackets, and pants — for both casual and occasion wear.",
     },
     {
-      question: "Can you source fabrics, linings, and trims?",
-      answer: "Yes, we can source all materials, including fabrics, linings, zippers, buttons, and embellishments. We also work with certified recyclable materials.",
+      question: "Do you offer full package production (design, sampling, bulk), or only CMT services?",
+      answer:
+        "Yes, we offer full-package production, including design, sourcing, fitting, quality control, and delivery.",
     },
     {
-      question: "What fabrics do you commonly use for dresses?",
-      answer: "We work with a wide variety of fabrics— including high stretch polyester, satin, viscose, chiffon, linen, velvet, woven, knit, lace, mesh and more.",
+      question: "Can you source fabrics, linings, and trims such as zippers, buttons, and embellishments?",
+      answer:
+        "Yes, we can source all materials, including fabrics, linings, zippers, buttons, and embellishments. We also work with certified recyclable materials.",
+    },
+    {
+      question: "What fabrics do you commonly use for dresses? (e.g., rayon, viscose, cotton voile, chiffon)",
+      answer:
+        "We work with a wide variety of fabrics— including high stretch polyester, satin, viscose, chiffon, linen, velvet, woven, knit, lace, mesh and more.",
+    },
+    {
+      question: "What are your typical lead times for sample development and bulk production?",
+      answer: (
+        <>
+          <strong>Samples:</strong> 2–3 weeks<br />
+          <strong>Bulk production:</strong> 3–4 weeks (depending on the order size and complexity)
+        </>
+      ),
     },
     {
       question: "Do you offer services for custom prints, embroidery, or beading?",
@@ -84,16 +111,17 @@ export default function Home() {
       answer: "Yes, we handle all logistics, including shipping and export documentation.",
     },
     {
-      question: "Do you have a website or digital catalogue?",
-      answer: "We don't have a public website, but you can join our mailing list to receive weekly updates on new styles and collections.",
+      question: "Do you have a website or digital catalogue to view past styles?",
+      answer: "We don’t have a public website, but you can join our mailing list to receive weekly updates on new styles and collections.",
     },
     {
-      question: "What certifications or audits does your facility hold?",
+      question: "What certifications or audits does your facility hold? (e.g., OEKO-TEX, GOTS)",
       answer: "Our facilities are SMETA-audited and SEDEX-compliant.",
     },
     {
-      question: "How do you typically collaborate with new fashion clients?",
-      answer: "We tailor our collaboration process to each customer's preferences. Some customers work with us through tech packs, sketches, or mood boards, while others choose from our pre-developed or in-stock designs.",
+      question: "How do you typically collaborate with new fashion clients? (Design rounds, tech packs, fitting process, etc.)",
+      answer:
+        "We tailor our collaboration process to each customer’s preferences. Some customers work with us through tech packs, sketches, or mood boards, while others choose from our pre-developed or in-stock designs.",
     },
   ]
 
