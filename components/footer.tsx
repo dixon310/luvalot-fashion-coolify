@@ -124,7 +124,7 @@ export default function Footer() {
             <ul className="space-y-3 text-sm">
               <li className="flex items-start">
                 <Mail size={16} className="text-neutral-500 mr-2 mt-0.5" />
-                <span className="text-neutral-600">info@luvalotfashion.com</span>
+                <span className="text-neutral-600">info@miyofashion.com</span>
               </li>
               <li className="flex items-start">
                 <Phone size={16} className="text-neutral-500 mr-2 mt-0.5" />
@@ -132,7 +132,7 @@ export default function Footer() {
               </li>
               <li className="flex items-start">
                 <MapPin size={16} className="text-neutral-500 mr-2 mt-0.5" />
-                <span className="text-neutral-600">123 Fashion Street, Design District, City, Country</span>
+                <span className="text-neutral-600">Haizhu District, Guangzhou, China</span>
               </li>
             </ul>
           </div>

@@ -131,7 +131,7 @@ export default function ContactUs() {
               <Mail className="mr-4 text-neutral-400" />
               <div>
                 <h3 className="font-medium">Email</h3>
-                <p className="text-neutral-600">info@luvalotclothing.com</p>
+                <p className="text-neutral-600">info@miyofashion.com</p>
               </div>
             </div>
 
@@ -147,7 +147,7 @@ export default function ContactUs() {
               <MapPin className="mr-4 text-neutral-400" />
               <div>
                 <h3 className="font-medium">Address</h3>
-                <p className="text-neutral-600">111-115 Langridge St Collingwood VIC 3066</p>
+                <p className="text-neutral-600">Haizhu District, Guangzhou, China</p>
               </div>
             </div>
           </div>
