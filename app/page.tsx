@@ -244,21 +244,6 @@ export default function Home() {
                   Specialized in sportswear and technical garments with advanced equipment.
                 </p>
               </div>
-
-              <div className="text-center">
-                <div className="relative h-[250px] w-full overflow-hidden mb-6 rounded">
-                  <Image
-                    src="https://images.unsplash.com/photo-1523381210434-271e8be1f52b?q=80&w=2940&auto=format&fit=crop"
-                    alt="Malaysia Factory"
-                    fill
-                    className="object-cover"
-                  />
-                </div>
-                <h3 className="text-xl uppercase tracking-wider mb-2">Malaysia</h3>
-                <p className="text-neutral-600">
-                  Focused on premium garments and smaller batch production with meticulous attention to detail.
-                </p>
-              </div>
             </div>
 
             <div className="text-center">
