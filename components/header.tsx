@@ -78,7 +78,7 @@ export default function Header() {
         <div className="flex flex-col items-center">
           <div className="w-full flex justify-between items-center md:justify-center">
             <Link href="/" className="mb-4">
-              <div className="relative w-32 h-32">
+              <div className="relative w-36 h-36">
                 <Image
                   src="/MIYO FASHION LOGO.png"
                   alt="MIYO Fashion"
@@ -126,7 +126,7 @@ export default function Header() {
           <div className="container mx-auto px-4 py-6">
             <div className="flex justify-between items-center mb-8">
               <Link href="/" onClick={() => setIsMenuOpen(false)}>
-                <div className="relative w-24 h-24">
+                <div className="relative w-28 h-28">
                   <Image
                     src="/MIYO FASHION LOGO.png"
                     alt="MIYO Fashion"
