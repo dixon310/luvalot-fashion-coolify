@@ -242,7 +242,7 @@ export default function Home() {
           <div className="container mx-auto">
             <h2 className="text-2xl font-light text-center uppercase tracking-widest mb-16">Our Factory Locations</h2>
 
-            <div className="grid grid-cols-1 lg:grid-cols-3 gap-12 mb-16">
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 mb-16 justify-center">
               <div className="text-center">
                 <div className="relative h-[250px] w-full overflow-hidden mb-6 rounded">
                   <Image
