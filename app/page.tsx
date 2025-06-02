@@ -52,27 +52,27 @@ export default function Home() {
 
   const certificates = [
     {
-      id: "gots",
-      title: "GOTS Certified",
-      description: "Global Organic Textile Standard certification for organic textiles.",
+      id: "C_SMETA",
+      title: "China: SMETA",
+      description: "",
       imageSrc: "/placeholder.svg?height=200&width=200&text=GOTS",
     },
     {
-      id: "oeko-tex",
-      title: "OEKO-TEX",
-      description: "Certifies textiles tested for harmful substances.",
+      id: "C_SEDEX",
+      title: "China: SEDEX",
+      description: "",
       imageSrc: "/placeholder.svg?height=200&width=200&text=OEKO-TEX",
     },
     {
-      id: "iso9001",
-      title: "ISO 9001",
-      description: "International standard for quality management systems.",
+      id: "V_WRAP",
+      title: "Vietnam: WRAP",
+      description: "",
       imageSrc: "/placeholder.svg?height=200&width=200&text=ISO9001",
     },
     {
-      id: "bci",
-      title: "BCI Member",
-      description: "Better Cotton Initiative promoting sustainable cotton production.",
+      id: "V_SEDEX",
+      title: "Vietnam: SEDEX",
+      description: "",
       imageSrc: "/placeholder.svg?height=200&width=200&text=BCI",
     },
   ]
