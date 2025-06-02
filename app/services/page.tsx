@@ -120,12 +120,12 @@ export default function Services() {
                     </li>
                   ))}
                 </ul>
-                <Link
+                {/* <Link
                   href={`/services/${service.id}`}
                   className="inline-block border border-black px-8 py-3 text-sm uppercase tracking-widest hover:bg-black hover:text-white transition-colors"
                 >
                   Learn More
-                </Link>
+                </Link> */}
               </div>
             </div>
           ))}
