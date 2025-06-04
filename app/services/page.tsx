@@ -63,6 +63,17 @@ export default function Services() {
       ],
       imageSrc: "/placeholder.svg?height=600&width=800&text=Sustainable+Production",
     },
+    {
+      id: "Logistics-Management",
+      title: "Logistics Management",
+      description: "Efficient logistics management to ensure timely delivery of your products.",
+      features: [
+        "We handle all aspects of logistics, from shipping to customs clearance.",
+        "Our team ensures your products reach you on time and in perfect condition.",
+        "We offer DDP (Delivered Duty Paid) and EXW (Ex-Works) options for flexibility.",
+      ],
+      imageSrc: "/placeholder.svg?height=600&width=800&text=Sustainable+Production",
+    },
   ]
 
   return (
