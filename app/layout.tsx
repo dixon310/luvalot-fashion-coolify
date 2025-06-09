@@ -4,7 +4,6 @@ import { Montserrat } from "next/font/google"
 import "./globals.css"
 import Header from "@/components/header"
 import Footer from "@/components/footer"
-// import { baseMetadata } from "./metadata"
 
 const montserrat = Montserrat({
   subsets: ["latin"],
@@ -14,23 +13,22 @@ const montserrat = Montserrat({
 export const metadata: Metadata = {
   title: "MIYO Fashion - OEM and ODM Fashion Provider",
   description: "We protect our clients' designs strictly and all the below are from our own design team.",
-    generator: 'v0.dev'
+  generator: 'v0.dev',
+  icons: {
+    icon: '/favicon.ico',
+    shortcut: '/favicon.ico',
+    apple: '/apple-touch-icon.png',
+  }
 }
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="en">
-      <head>
-        <link rel="icon" href="/favicon.ico" sizes="any" />
-        {/* You can add more icon links here if needed */}
-      </head>
-      <body>
+      <body className={montserrat.variable}>
+        <Header />
         {children}
+        <Footer />
       </body>
     </html>
   )
 }
-
-
-
-import './globals.css'
