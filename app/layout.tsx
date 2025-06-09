@@ -17,24 +17,15 @@ export const metadata: Metadata = {
     generator: 'v0.dev'
 }
 
-export default function RootLayout({
-  children,
-}: Readonly<{
-  children: React.ReactNode
-}>) {
+export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="en">
       <head>
-        <link
-          rel="stylesheet"
-          href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&display=swap"
-        />
-        <link rel="canonical" href="https://miyofashion.com" />
+        <link rel="icon" href="/favicon.ico" sizes="any" />
+        {/* You can add more icon links here if needed */}
       </head>
-      <body className={montserrat.className}>
-        <Header />
-        <main>{children}</main>
-        <Footer />
+      <body>
+        {children}
       </body>
     </html>
   )
