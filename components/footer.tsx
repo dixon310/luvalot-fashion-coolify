@@ -43,26 +43,26 @@ export default function Footer() {
             <ul className="space-y-2 text-sm">
               <li>
                 <Link
-                  href="/services/private-label"
+                  href="/services/Pricing-Flexibility"
                   className="text-neutral-600 hover:text-neutral-800 transition-colors"
                 >
-                  Private Label Manufacturing
+                  Pricing Flexibility
                 </Link>
               </li>
               <li>
                 <Link
-                  href="/services/design-development"
+                  href="/services/One-Stop-Services"
                   className="text-neutral-600 hover:text-neutral-800 transition-colors"
                 >
-                  Design & Development
+                  One-Stop Services
                 </Link>
               </li>
               <li>
                 <Link
-                  href="/services/sustainable-production"
+                  href="/services/Private-Label-Capabilities"
                   className="text-neutral-600 hover:text-neutral-800 transition-colors"
                 >
-                  Sustainable Production
+                  Private Label Capabilities
                 </Link>
               </li>
               <li>
@@ -72,10 +72,18 @@ export default function Footer() {
               </li>
               <li>
                 <Link
-                  href="/services/quality-control"
+                  href="/services/Design-Development"
                   className="text-neutral-600 hover:text-neutral-800 transition-colors"
                 >
-                  Quality Control
+                  Design & Development
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href="/services/Logistics-Management"
+                  className="text-neutral-600 hover:text-neutral-800 transition-colors"
+                >
+                  Logistics Management
                 </Link>
               </li>
             </ul>
@@ -102,11 +110,6 @@ export default function Footer() {
               <li>
                 <Link href="/contact-us" className="text-neutral-600 hover:text-neutral-800 transition-colors">
                   Contact Us
-                </Link>
-              </li>
-              <li>
-                <Link href="/blog" className="text-neutral-600 hover:text-neutral-800 transition-colors">
-                  Blog
                 </Link>
               </li>
             </ul>
