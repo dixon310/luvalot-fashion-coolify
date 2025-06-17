@@ -2,14 +2,13 @@ export function OrganizationStructuredData() {
   const structuredData = {
     "@context": "https://schema.org",
     "@type": "Organization",
-    name: "Luvalot Fashion",
-    url: "https://luvalotfashion.com",
-    logo: "https://luvalotfashion.com/images/logo.png",
+    name: "MIYO Fashion",
+    url: "https://www.miyofashion.com/",
+    logo: "https://www.miyofashion.com/images/logo.png",
     sameAs: [
-      "https://instagram.com/luvalotfashion",
-      "https://facebook.com/luvalotfashion",
-      "https://youtube.com/luvalotfashion",
-      "https://tiktok.com/@luvalotfashion",
+      "https://www.instagram.com/fashion_miyo/",
+      "https://www.youtube.com/@miyo_fashion",
+      "https://www.tiktok.com/@miyo_fashion",
     ],
     contactPoint: {
       "@type": "ContactPoint",
@@ -41,8 +40,8 @@ export function ServiceStructuredData() {
     serviceType: "Fashion Manufacturing",
     provider: {
       "@type": "Organization",
-      name: "Luvalot Fashion",
-      url: "https://luvalotfashion.com",
+      name: "MIYO Fashion",
+      url: "https://miyofashion.com",
     },
     areaServed: "Worldwide",
     description:

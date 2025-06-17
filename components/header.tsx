@@ -169,7 +169,7 @@ export default function Header() {
 
             <div className="flex justify-center space-x-6 mt-12">
               <Link
-                href="https://instagram.com"
+                href="https://www.instagram.com/fashion_miyo/"
                 aria-label="Instagram"
                 className="text-neutral-500 hover:text-neutral-800 transition-colors"
                 onClick={() => setIsMenuOpen(false)}
@@ -177,7 +177,7 @@ export default function Header() {
                 <Instagram size={24} />
               </Link>
               <Link
-                href="https://youtube.com"
+                href="https://www.youtube.com/@miyo_fashion"
                 aria-label="YouTube"
                 className="text-neutral-500 hover:text-neutral-800 transition-colors"
                 onClick={() => setIsMenuOpen(false)}
@@ -185,7 +185,7 @@ export default function Header() {
                 <Youtube size={24} />
               </Link>
               <Link
-                href="https://tiktok.com"
+                href="https://www.tiktok.com/@miyo_fashion"
                 aria-label="TikTok"
                 className="text-neutral-500 hover:text-neutral-800 transition-colors"
                 onClick={() => setIsMenuOpen(false)}

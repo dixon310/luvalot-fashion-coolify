@@ -15,28 +15,21 @@ export default function Footer() {
             </p>
             <div className="flex space-x-4">
               <Link
-                href="https://instagram.com"
+                href="https://www.instagram.com/fashion_miyo/"
                 aria-label="Instagram"
                 className="text-neutral-500 hover:text-neutral-800 transition-colors"
               >
                 <Instagram size={20} />
               </Link>
               <Link
-                href="https://facebook.com"
-                aria-label="Facebook"
-                className="text-neutral-500 hover:text-neutral-800 transition-colors"
-              >
-                <Facebook size={20} />
-              </Link>
-              <Link
-                href="https://twitter.com"
-                aria-label="Twitter"
+                href="https://www.youtube.com/@miyo_fashion"
+                aria-label="YouTube"
                 className="text-neutral-500 hover:text-neutral-800 transition-colors"
               >
                 <Youtube size={20} />
               </Link>
               <Link
-                href="https://tiktok.com"
+                href="https://www.tiktok.com/@miyo_fashion"
                 aria-label="TikTok"
                 className="text-neutral-500 hover:text-neutral-800 transition-colors"
               >
