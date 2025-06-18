@@ -8,7 +8,7 @@ interface CertificateCardProps {
 
 export default function CertificateCard({ title, description, imageSrc }: CertificateCardProps) {
   return (
-    <div className="bg-white p-8 rounded-lg shadow-sm hover:shadow-lg transition-all duration-300 text-center border border-gray-100">
+    <div className="bg-white p-8 rounded-lg shadow-sm hover:shadow-lg transition-all duration-300 text-center border border-100">
       <div className="flex justify-center mb-6">
         <div className="relative w-40 h-40 flex items-center justify-center bg-gray-50 rounded-lg p-4">
           <Image 
