@@ -8,20 +8,15 @@ interface CertificateCardProps {
 
 export default function CertificateCard({ title, description, imageSrc }: CertificateCardProps) {
   return (
-    <div className="bg-white p-8 rounded-lg shadow-sm hover:shadow-lg transition-all duration-300 text-center border border-gray-100">
-      <div className="flex justify-center mb-6">
-        <div className="relative w-32 h-32 flex items-center justify-center bg-gray-50 rounded-lg p-4">
-          <Image 
-            src={imageSrc || "/placeholder.svg"} 
-            alt={title} 
-            fill 
-            className="object-contain p-2" 
-            sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 25vw"
-          />
+    <div className="bg-white p-6 rounded shadow-sm hover:shadow-md transition-shadow text-center">
+      <div className="flex justify-center mb-4">
+        <div className="relative w-24 h-24">
+          <Image src={imageSrc || "/placeholder.svg"} alt={title} fill className="object-contain" />
         </div>
       </div>
-      <h3 className="text-lg font-medium uppercase tracking-wider mb-3 text-gray-800">{title}</h3>
-      <p className="text-neutral-600 text-sm leading-relaxed">{description}</p>
+      <h3 className="text-lg uppercase tracking-wider mb-2">{title}</h3>
+      <p className="text-neutral-600 text-sm">{description}</p>
     </div>
   )
 }
+
