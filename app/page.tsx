@@ -61,13 +61,13 @@ export default function Home() {
       id: "SEDEX",
       title: "All SEDEX Members",
       description: "",
-      imageSrc: "/sedex.png?height=200&width=200&text=SEDEX",
+      imageSrc: "/sedex.png?height=200&width=400&text=SEDEX",
     },
     {
       id: "WRAP",
       title: "Social Compliance Audits in Vietnam WRAP",
       description: "",
-      imageSrc: "/placeholder.svg?height=200&width=200&text=WRAP",
+      imageSrc: "/wrap.png?height=200&width=200&text=WRAP",
     },
     {
       id: "HIGG",
