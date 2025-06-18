@@ -10,7 +10,7 @@ export default function CertificateCard({ title, description, imageSrc }: Certif
   return (
     <div className="bg-white p-6 rounded shadow-sm hover:shadow-md transition-shadow text-center">
       <div className="flex justify-center mb-4">
-        <div className="relative w-24 h-24">
+        <div className="relative w-56 h-24">
           <Image src={imageSrc || "/placeholder.svg"} alt={title} fill className="object-contain" />
         </div>
       </div>
