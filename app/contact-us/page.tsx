@@ -122,8 +122,12 @@ export default function ContactUs() {
         <div>
           <h2 className="text-xl font-light uppercase tracking-wider mb-8">Get In Touch</h2>
           <p className="text-neutral-600 mb-8">
-            We'd love to hear from you. Whether you have a question about our products, manufacturing capabilities, or
-            anything else, our team is ready to answer all your questions.
+            We’d love to hear from you! Whether you’re exploring the latest in fashion production, curious about our on-trend styles,
+             or want to learn more about our manufacturing capabilities, our team is here to help bring your vision to life. If you’re 
+             looking for a reliable fashion supplier, we’re a full-service, one-stop production partner ready to support you from concept to delivery.
+          </p>
+          <p className="text-neutral-600 mb-8">
+            In the fill out form section please add business name and location.
           </p>
 
           <div className="space-y-6">
@@ -236,7 +240,7 @@ export default function ContactUs() {
 
             <div>
               <label htmlFor="message" className="sr-only">
-                Your Message
+                Your Message (please add business name and location)
               </label>
               <textarea
                 id="message"
