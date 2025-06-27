@@ -240,14 +240,14 @@ export default function ContactUs() {
 
             <div>
               <label htmlFor="message" className="sr-only">
-                Your Message (please add business name and location)
+                Your Message
               </label>
               <textarea
                 id="message"
                 name="message"
                 rows={5}
                 className={`w-full px-4 py-3 border-b ${formState.errors.message ? "border-red-500" : "border-neutral-300"} focus:outline-none focus:border-black`}
-                placeholder="Your Message"
+                placeholder="Your Message (please add business name and location)"
                 required
                 aria-required="true"
                 aria-invalid={formState.errors.message ? "true" : "false"}
