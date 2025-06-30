@@ -72,7 +72,7 @@ export default function ContactUs() {
           Accept: "application/json",
         },
         body: JSON.stringify({
-          access_key: "44df3a4d-e413-4127-af1f-470a56ca03bd", // Replace with your actual Web3Forms access key
+          access_key: "c5d29c27-3102-4e60-9b9f-27477f324393", // Replace with your actual Web3Forms access key
           name,
           email,
           subject,
