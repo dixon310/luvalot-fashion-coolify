@@ -300,7 +300,7 @@ export default function ContactUs() {
               <textarea
                 id="message"
                 name="message"
-                rows={5}
+                rows={8}
                 className={`w-full px-4 py-3 border-b ${formState.errors.message ? "border-red-500" : "border-neutral-300"} focus:outline-none focus:border-black`}
                 placeholder="Your Message"
                 required
