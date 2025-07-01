@@ -29,6 +29,8 @@ export default function ContactUs() {
     const formData = new FormData(form)
     const name = formData.get("name") as string
     const email = formData.get("email") as string
+    const businessName = formData.get("businessName") as string
+    const location = formData.get("location") as string
     const subject = formData.get("subject") as string
     const message = formData.get("message") as string
 
@@ -42,6 +44,14 @@ export default function ContactUs() {
       errors.email = "Email is required"
     } else if (!/^\S+@\S+\.\S+$/.test(email)) {
       errors.email = "Please enter a valid email address"
+    }
+
+    if (!businessName || businessName.trim() === "") {
+      errors.businessName = "Business name is required"
+    }
+
+    if (!location || location.trim() === "") {
+      errors.location = "Location is required"
     }
 
     if (!subject || subject.trim() === "") {
@@ -75,6 +85,8 @@ export default function ContactUs() {
           access_key: "c5d29c27-3102-4e60-9b9f-27477f324393", // Replace with your actual Web3Forms access key
           name,
           email,
+          business_name: businessName,
+          location,
           subject,
           message,
           from_name: "MIYO Fashion Contact Form",
@@ -122,12 +134,12 @@ export default function ContactUs() {
         <div>
           <h2 className="text-xl font-light uppercase tracking-wider mb-8">Get In Touch</h2>
           <p className="text-neutral-600 mb-8">
-            We’d love to hear from you! Whether you’re exploring the latest in fashion production, curious about our on-trend styles,
-             or want to learn more about our manufacturing capabilities, our team is here to help bring your vision to life. If you’re 
-             looking for a reliable fashion supplier, we’re a full-service, one-stop production partner ready to support you from concept to delivery.
+            We'd love to hear from you! Whether you're exploring the latest in fashion production, curious about our on-trend styles,
+             or want to learn more about our manufacturing capabilities, our team is here to help bring your vision to life. If you're 
+             looking for a reliable fashion supplier, we're a full-service, one-stop production partner ready to support you from concept to delivery.
           </p>
           <p className="text-neutral-600 mb-8">
-            In the fill out form section please add business name and location.
+            Please provide your business name and location in the form to help us better understand your needs.
           </p>
 
           <div className="space-y-6">
@@ -217,6 +229,49 @@ export default function ContactUs() {
               </div>
             </div>
 
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+              <div>
+                <label htmlFor="businessName" className="sr-only">
+                  Business Name
+                </label>
+                <input
+                  type="text"
+                  id="businessName"
+                  name="businessName"
+                  className={`w-full px-4 py-3 border-b ${formState.errors.businessName ? "border-red-500" : "border-neutral-300"} focus:outline-none focus:border-black`}
+                  placeholder="Business Name"
+                  required
+                  aria-required="true"
+                  aria-invalid={formState.errors.businessName ? "true" : "false"}
+                />
+                {formState.errors.businessName && (
+                  <p className="mt-1 text-xs text-red-500" id="businessName-error">
+                    {formState.errors.businessName}
+                  </p>
+                )}
+              </div>
+              <div>
+                <label htmlFor="location" className="sr-only">
+                  Location
+                </label>
+                <input
+                  type="text"
+                  id="location"
+                  name="location"
+                  className={`w-full px-4 py-3 border-b ${formState.errors.location ? "border-red-500" : "border-neutral-300"} focus:outline-none focus:border-black`}
+                  placeholder="Location"
+                  required
+                  aria-required="true"
+                  aria-invalid={formState.errors.location ? "true" : "false"}
+                />
+                {formState.errors.location && (
+                  <p className="mt-1 text-xs text-red-500" id="location-error">
+                    {formState.errors.location}
+                  </p>
+                )}
+              </div>
+            </div>
+
             <div>
               <label htmlFor="subject" className="sr-only">
                 Subject
@@ -247,7 +302,7 @@ export default function ContactUs() {
                 name="message"
                 rows={5}
                 className={`w-full px-4 py-3 border-b ${formState.errors.message ? "border-red-500" : "border-neutral-300"} focus:outline-none focus:border-black`}
-                placeholder="Your Message (please add business name and location)"
+                placeholder="Your Message"
                 required
                 aria-required="true"
                 aria-invalid={formState.errors.message ? "true" : "false"}
@@ -280,4 +335,3 @@ export default function ContactUs() {
     </div>
   )
 }
-
