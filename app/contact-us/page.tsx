@@ -133,12 +133,12 @@ export default function ContactUs() {
       <div className="grid grid-cols-1 md:grid-cols-2 gap-16 max-w-5xl mx-auto">
         <div>
           <h2 className="text-xl font-light uppercase tracking-wider mb-8">Get In Touch</h2>
-          <p className="text-neutral-600 mb-8">
+          <p className="text-neutral-600 text-justify mb-8">
             We'd love to hear from you! Whether you're exploring the latest in fashion production, curious about our on-trend styles,
              or want to learn more about our manufacturing capabilities, our team is here to help bring your vision to life. If you're 
              looking for a reliable fashion supplier, we're a full-service, one-stop production partner ready to support you from concept to delivery.
           </p>
-          <p className="text-neutral-600 mb-8">
+          <p className="text-neutral-600 text-justify mb-8">
             Please provide your business name and location in the form to help us better understand your needs.
           </p>
 
