@@ -113,7 +113,7 @@ export default function FactoryTour() {
             <div>
               <div className="relative h-[400px] w-full overflow-hidden rounded">
                 <iframe
-                  src="https://www.youtube.com/watch?v=9z-j-SPvji0"
+                  src="https://www.youtube.com/embed/9z-j-SPvji0?si=ZY87zoCFdM3CbBMI"
                   title="Quality Control Process Video"
                   className="absolute inset-0 w-full h-full"
                   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
