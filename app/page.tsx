@@ -53,25 +53,25 @@ export default function Home() {
   const certificates = [
     {
       id: "SMETA",
-      title: "Social Compliance Audits in China SMETA",
+      // title: "Social Compliance Audits in China SMETA",
       description: "",
       imageSrc: "/smeta.png?height=200&width=200&text=SMETA",
     },
     {
       id: "SEDEX",
-      title: "All SEDEX Members",
+      // title: "All SEDEX Members",
       description: "",
       imageSrc: "/sedex.png?height=200&width=400&text=SEDEX",
     },
     {
       id: "WRAP",
-      title: "",
+      // title: "",
       description: "",
       imageSrc: "/wrap.png?height=200&width=200&text=WRAP",
     },
     {
       id: "HIGG",
-      title: "HIGG certificate in China",
+      // title: "HIGG certificate in China",
       description: "",
       imageSrc: "/higg_index.png?height=200&width=200&text=HIGG",
     },
