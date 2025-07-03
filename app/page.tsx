@@ -196,7 +196,7 @@ export default function Home() {
                 </div>
                 <h3 className="text-xl uppercase tracking-wider mb-4">15+ Years Experience</h3>
                 <p className="text-neutral-600">
-                  With over 15 years in the industry, we've built long-standing relationships with clients who trust our
+                  With over 15 years in the industry, we've built long-standing relationships with customers who trust our
                   expertise.
                 </p>
               </div>
