@@ -65,7 +65,7 @@ export default function Home() {
     },
     {
       id: "WRAP",
-      title: "Social Compliance Audits in Vietnam WRAP",
+      title: "",
       description: "",
       imageSrc: "/wrap.png?height=200&width=200&text=WRAP",
     },
