@@ -9,8 +9,8 @@ interface SlideContent {
   imageSrc: string
   heading: string
   subheading: string
-  buttonText: string
-  buttonLink: string
+  buttonText?: string
+  buttonLink?: string
 }
 
 interface HeroSliderProps {
@@ -120,16 +120,18 @@ export default function HeroSlider({ slides, autoplaySpeed = 5000 }: HeroSliderP
             {slides[slideToRender].heading}
           </h1>
           <p className="text-lg mb-8">{slides[slideToRender].subheading}</p>
-          <Link
-            href={
-              slides[slideToRender].heading.includes("Sustainable")
-                ? "/services#sustainable-production"
-                : slides[slideToRender].buttonLink
-            }
-            className="inline-block border border-white px-8 py-3 text-sm uppercase tracking-widest hover:bg-white hover:text-black transition-colors"
-          >
-            {slides[slideToRender].buttonText}
-          </Link>
+          {slides[slideToRender].buttonText && slides[slideToRender].buttonLink && (
+            <Link
+              href={
+                slides[slideToRender].heading.includes("Sustainable")
+                  ? "/services#sustainable-production"
+                  : slides[slideToRender].buttonLink!
+              }
+              className="inline-block border border-white px-8 py-3 text-sm uppercase tracking-widest hover:bg-white hover:text-black transition-colors"
+            >
+              {slides[slideToRender].buttonText}
+            </Link>
+          )}
         </div>
       </div>
     </section>
