@@ -53,25 +53,25 @@ export default function Home() {
   const certificates = [
     {
       id: "SMETA",
-      // title: "Social Compliance Audits in China SMETA",
+      title: "SMETA Certification",
       description: "",
       imageSrc: "/smeta.png?height=200&width=200&text=SMETA",
     },
     {
       id: "SEDEX",
-      // title: "All SEDEX Members",
+      title: "SEDEX Membership",
       description: "",
       imageSrc: "/sedex.png?height=200&width=400&text=SEDEX",
     },
     {
       id: "WRAP",
-      // title: "",
+      title: "WRAP Certification",
       description: "",
       imageSrc: "/wrap.png?height=200&width=200&text=WRAP",
     },
     {
       id: "HIGG",
-      // title: "HIGG certificate in China",
+      title: "HIGG Index Certificate",
       description: "",
       imageSrc: "/higg_index.png?height=200&width=200&text=HIGG",
     },
@@ -139,7 +139,7 @@ export default function Home() {
     },
     {
       question: "Do you have a website or digital catalogue to view past styles?",
-      answer: "We don’t have a public website, but you can join our mailing list to receive weekly updates on new styles and collections.",
+      answer: "We don't have a public website, but you can join our mailing list to receive weekly updates on new styles and collections.",
     },
     {
       question: "What certifications or audits does your facility hold? (e.g., OEKO-TEX, GOTS)",
@@ -148,7 +148,7 @@ export default function Home() {
     {
       question: "How do you typically collaborate with new fashion clients? (Design rounds, tech packs, fitting process, etc.)",
       answer:
-        "We tailor our collaboration process to each customer’s preferences. Some customers work with us through tech packs, sketches, or mood boards, while others choose from our pre-developed or in-stock designs.",
+        "We tailor our collaboration process to each customer's preferences. Some customers work with us through tech packs, sketches, or mood boards, while others choose from our pre-developed or in-stock designs.",
     },
   ]
 
