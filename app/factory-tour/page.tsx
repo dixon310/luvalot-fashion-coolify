@@ -19,7 +19,7 @@ export default function FactoryTour() {
       {/* Hero Banner */}
       <div className="relative h-[40vh] w-full">
         <Image
-          src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Generated%20Image%20March%2020%2C%202025%20-%2010_51AM.png-4pw1AlvNWigCjAdRsirIuwWROOOQyI.jpeg"
+          src="/placeholder.svg?height=600&width=1920"
           alt="Factory Tour Banner"
           fill
           priority
