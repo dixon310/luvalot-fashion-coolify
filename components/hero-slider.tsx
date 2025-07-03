@@ -115,11 +115,15 @@ export default function HeroSlider({ slides, autoplaySpeed = 5000 }: HeroSliderP
 
       {/* Text overlay - centered on the slider */}
       <div className="absolute inset-0 flex items-center justify-center z-10">
-        <div className="text-center text-white p-6 max-w-3xl">
-          <h1 className="text-4xl md:text-5xl lg:text-6xl font-light mb-6 tracking-wider">
+        <div className="text-center text-white p-6 max-w-5xl">
+          <h1 className="text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-light mb-6 tracking-wide leading-tight">
             {slides[slideToRender].heading}
           </h1>
-          <p className="text-lg mb-8">{slides[slideToRender].subheading}</p>
+          {slides[slideToRender].subheading && (
+            <p className="text-lg md:text-xl mb-8 max-w-3xl mx-auto leading-relaxed">
+              {slides[slideToRender].subheading}
+            </p>
+          )}
           {slides[slideToRender].buttonText && slides[slideToRender].buttonLink && (
             <Link
               href={
