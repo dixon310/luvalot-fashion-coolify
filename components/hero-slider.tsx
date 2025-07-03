@@ -50,9 +50,6 @@ export default function HeroSlider({ slides, autoplaySpeed = 5000 }: HeroSliderP
     setCurrentSlide((prev) => (prev === slides.length - 1 ? 0 : prev + 1))
   }
 
-  // Use first slide for server render, current slide for client render
-  const slideToRender = isMounted ? currentSlide : 0
-
   return (
     <section className="relative h-screen w-full">
       <div className="absolute inset-0 w-full h-full">
@@ -61,7 +58,7 @@ export default function HeroSlider({ slides, autoplaySpeed = 5000 }: HeroSliderP
           <div
             key={index}
             className={`absolute inset-0 transition-opacity duration-1000 ease-in-out ${
-              index === slideToRender ? "opacity-100 z-10" : "opacity-0 z-0"
+              index === currentSlide ? "opacity-100 z-10" : "opacity-0 z-0"
             }`}
           >
             <Image
@@ -76,64 +73,67 @@ export default function HeroSlider({ slides, autoplaySpeed = 5000 }: HeroSliderP
           </div>
         ))}
 
-        {/* Slider navigation dots - only render on client */}
-        {isMounted && (
-          <div className="absolute bottom-8 left-0 right-0 flex justify-center space-x-2 z-20">
-            {slides.map((_, index) => (
-              <button
-                key={index}
-                onClick={() => goToSlide(index)}
-                className={`w-3 h-3 rounded-full transition-opacity ${
-                  index === currentSlide ? "bg-white opacity-100" : "bg-white opacity-50"
-                }`}
-                aria-label={`Go to slide ${index + 1}`}
-              ></button>
-            ))}
-          </div>
-        )}
+        {/* Slider navigation dots - always rendered but controlled by opacity */}
+        <div className={`absolute bottom-8 left-0 right-0 flex justify-center space-x-2 z-20 transition-opacity duration-300 ${
+          isMounted ? "opacity-100" : "opacity-0"
+        }`}>
+          {slides.map((_, index) => (
+            <button
+              key={index}
+              onClick={() => goToSlide(index)}
+              disabled={!isMounted}
+              className={`w-3 h-3 rounded-full transition-opacity ${
+                index === currentSlide ? "bg-white opacity-100" : "bg-white opacity-50"
+              } ${!isMounted ? "pointer-events-none" : ""}`}
+              aria-label={`Go to slide ${index + 1}`}
+            ></button>
+          ))}
+        </div>
 
-        {/* Left/Right navigation arrows - only render on client */}
-        {isMounted && (
-          <>
-            <button
-              onClick={goToPrevSlide}
-              className="absolute left-4 top-1/2 transform -translate-y-1/2 bg-black bg-opacity-30 hover:bg-opacity-50 text-white p-2 rounded-full z-20 transition-all"
-              aria-label="Previous slide"
-            >
-              <ChevronLeft size={24} />
-            </button>
-            <button
-              onClick={goToNextSlide}
-              className="absolute right-4 top-1/2 transform -translate-y-1/2 bg-black bg-opacity-30 hover:bg-opacity-50 text-white p-2 rounded-full z-20 transition-all"
-              aria-label="Next slide"
-            >
-              <ChevronRight size={24} />
-            </button>
-          </>
-        )}
+        {/* Left/Right navigation arrows - always rendered but controlled by opacity */}
+        <button
+          onClick={goToPrevSlide}
+          disabled={!isMounted}
+          className={`absolute left-4 top-1/2 transform -translate-y-1/2 bg-black bg-opacity-30 hover:bg-opacity-50 text-white p-2 rounded-full z-20 transition-all ${
+            isMounted ? "opacity-100" : "opacity-0"
+          } ${!isMounted ? "pointer-events-none" : ""}`}
+          aria-label="Previous slide"
+        >
+          <ChevronLeft size={24} />
+        </button>
+        <button
+          onClick={goToNextSlide}
+          disabled={!isMounted}
+          className={`absolute right-4 top-1/2 transform -translate-y-1/2 bg-black bg-opacity-30 hover:bg-opacity-50 text-white p-2 rounded-full z-20 transition-all ${
+            isMounted ? "opacity-100" : "opacity-0"
+          } ${!isMounted ? "pointer-events-none" : ""}`}
+          aria-label="Next slide"
+        >
+          <ChevronRight size={24} />
+        </button>
       </div>
 
       {/* Text overlay - centered on the slider */}
       <div className="absolute inset-0 flex items-center justify-center z-10">
         <div className="text-center text-white p-6 max-w-5xl">
           <h1 className="text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-light mb-6 tracking-wide leading-tight">
-            {slides[slideToRender].heading}
+            {slides[currentSlide].heading}
           </h1>
-          {slides[slideToRender].subheading && (
+          {slides[currentSlide].subheading && (
             <p className="text-lg md:text-xl mb-8 max-w-3xl mx-auto leading-relaxed">
-              {slides[slideToRender].subheading}
+              {slides[currentSlide].subheading}
             </p>
           )}
-          {slides[slideToRender].buttonText && slides[slideToRender].buttonLink && (
+          {slides[currentSlide].buttonText && slides[currentSlide].buttonLink && (
             <Link
               href={
-                slides[slideToRender].heading.includes("Sustainable")
+                slides[currentSlide].heading.includes("Sustainable")
                   ? "/services#sustainable-production"
-                  : slides[slideToRender].buttonLink!
+                  : slides[currentSlide].buttonLink!
               }
               className="inline-block border border-white px-8 py-3 text-sm uppercase tracking-widest hover:bg-white hover:text-black transition-colors"
             >
-              {slides[slideToRender].buttonText}
+              {slides[currentSlide].buttonText}
             </Link>
           )}
         </div>
