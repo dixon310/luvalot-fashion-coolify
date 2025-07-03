@@ -67,7 +67,7 @@ export default function Home() {
       id: "WRAP",
       // title: "",
       description: "",
-      imageSrc: "/wrap.png?height=300&width=300&text=WRAP",
+      imageSrc: "/wrap.png?height=200&width=200&text=WRAP",
     },
     {
       id: "HIGG",
