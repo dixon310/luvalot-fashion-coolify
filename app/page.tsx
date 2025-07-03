@@ -53,25 +53,25 @@ export default function Home() {
   const certificates = [
     {
       id: "SMETA",
-      title: "SMETA Certification",
+      title: "",
       description: "",
       imageSrc: "/smeta.png?height=200&width=200&text=SMETA",
     },
     {
       id: "SEDEX",
-      title: "SEDEX Membership",
+      title: "",
       description: "",
       imageSrc: "/sedex.png?height=200&width=400&text=SEDEX",
     },
     {
       id: "WRAP",
-      title: "WRAP Certification",
+      title: "",
       description: "",
       imageSrc: "/wrap.png?height=200&width=200&text=WRAP",
     },
     {
       id: "HIGG",
-      title: "HIGG Index Certificate",
+      title: "",
       description: "",
       imageSrc: "/higg_index.png?height=200&width=200&text=HIGG",
     },
