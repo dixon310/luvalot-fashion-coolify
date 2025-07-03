@@ -169,10 +169,10 @@ export default function Home() {
             },
             {
               imageSrc: "https://images.unsplash.com/photo-1556905055-8f358a7a47b2?q=80&w=1920&auto=format&fit=crop",
-              heading: "Bespoke Design & Development",
-              subheading: "From concept to creation with our expert in-house design team",
-              buttonText: "Our Process",
-              buttonLink: "#process",
+              heading: "From concept to creation with our expert in house design and production team",
+              subheading: "",
+              // buttonText: "Our Process",
+              // buttonLink: "#process",
             },
             {
               imageSrc: "https://images.unsplash.com/photo-1558769132-cb1aea458c5e?q=80&w=1920&auto=format&fit=crop",
