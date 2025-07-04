@@ -74,40 +74,6 @@ export default function About() {
           </div>
         </div>
       </div>
-
-      {/* Team Section */}
-      <div className="bg-neutral-50 py-16">
-        <div className="container mx-auto px-4">
-          <h2 className="text-2xl font-light uppercase tracking-widest mb-12 text-center">Our Team</h2>
-
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-5xl mx-auto">
-            <div className="text-center">
-              <div className="relative h-[300px] w-[300px] mx-auto mb-4 overflow-hidden rounded-full">
-                <Image src="/placeholder.svg?height=300&width=300" alt="Team Member" fill className="object-cover" />
-              </div>
-              <h3 className="text-xl uppercase tracking-wider mb-1">Jane Doe</h3>
-              <p className="text-neutral-600 mb-2">Creative Director</p>
-            </div>
-
-            <div className="text-center">
-              <div className="relative h-[300px] w-[300px] mx-auto mb-4 overflow-hidden rounded-full">
-                <Image src="/placeholder.svg?height=300&width=300" alt="Team Member" fill className="object-cover" />
-              </div>
-              <h3 className="text-xl uppercase tracking-wider mb-1">John Smith</h3>
-              <p className="text-neutral-600 mb-2">Production Manager</p>
-            </div>
-
-            <div className="text-center">
-              <div className="relative h-[300px] w-[300px] mx-auto mb-4 overflow-hidden rounded-full">
-                <Image src="/placeholder.svg?height=300&width=300" alt="Team Member" fill className="object-cover" />
-              </div>
-              <h3 className="text-xl uppercase tracking-wider mb-1">Sarah Johnson</h3>
-              <p className="text-neutral-600 mb-2">Head of Design</p>
-            </div>
-          </div>
-        </div>
-      </div>
     </div>
   )
 }
-
