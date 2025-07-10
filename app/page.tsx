@@ -298,9 +298,6 @@ export default function Home() {
                   />
                 </div>
                 <h3 className="text-xl uppercase tracking-wider mb-2">China</h3>
-                <p className="text-neutral-600">
-                  Our primary manufacturing hub with comprehensive facilities for all production needs.
-                </p>
               </div>
 
               <div className="text-center">
@@ -313,9 +310,6 @@ export default function Home() {
                   />
                 </div>
                 <h3 className="text-xl uppercase tracking-wider mb-2">Vietnam</h3>
-                <p className="text-neutral-600">
-                  Specialized in sportswear and technical garments with advanced equipment.
-                </p>
               </div>
             </div>
 
