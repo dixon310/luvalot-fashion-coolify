@@ -65,7 +65,7 @@ export default function FactoryTour() {
             <div>
               <div className="relative h-[400px] w-full overflow-hidden">
                 <Image
-                  src="/QualityControl_hand.PNG?height=600&width=800"
+                  src="/QualityControl_hand.png?height=600&width=800"
                   alt="Cutting Department"
                   fill
                   className="object-cover"
