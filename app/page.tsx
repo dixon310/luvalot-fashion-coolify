@@ -14,7 +14,7 @@ export default function Home() {
       id: 1,
       title: "Research & Development",
       description:
-        "Our thorough R&D process ensures we stay ahead of trends and develop innovative solutions for your brand.",
+        "Our thorough R&D process ensures we stay ahead of trends and curate best sellers for your brand.",
       icon: "ruler",
     },
     {
@@ -32,14 +32,14 @@ export default function Home() {
     {
       id: 4,
       title: "Sample Development",
-      description: "We develop more than 100 samples weekly, ensuring your vision is perfectly realized.",
+      description: "We are able to develop from your inspiration/designs or you will have access to our 100+ weekly pre-production samples we release exclusively.",
       icon: "shirt",
     },
     {
       id: 5,
       title: "Production",
       description:
-        "With multiple factory sites in China, Vietnam, and Malaysia, we ensure efficient and quality production.",
+        "With multiple factories in China and Vietnam, we ensure efficient and the best quality production.",
       icon: "factory",
     },
     {
