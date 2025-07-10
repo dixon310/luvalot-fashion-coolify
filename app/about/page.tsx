@@ -31,25 +31,20 @@ export default function About() {
           <p className="text-neutral-600 mb-6">
             MIYO Fashion was founded with a clear vision: to provide exceptional OEM and ODM services to fashion brands
              across the globe. With years of industry experience, our team deeply understands the importance of quality, 
-             innovative design, and reliable delivery. We proudly operate state-of-the-art manufacturing facilities, where 
-             skilled artisans bring every concept to life with precision, care, and attention to detail. Our designs are developed in 
-             Australia, combining creativity and global trends to meet the needs of modern fashion brands. Our commitment to excellence 
-             has made us a trusted partner for fashion brands of all sizes worldwide. Sustainability and ethical manufacturing are at the 
-             heart of everything we do. Our facilities include a recyclable mill, offering eco-friendly material options to help our partners 
-             reduce their environmental footprint.
-          </p>
-
-          {/* <p className="text-neutral-600 mb-6">
-            We take pride in our state-of-the-art manufacturing facilities and our team of skilled artisans who bring
-            designs to life with precision and care. Our commitment to excellence has made us a trusted partner for
-            fashion brands of all sizes.
+             innovative design, and reliable delivery. 
           </p>
 
           <p className="text-neutral-600 mb-6">
-            At MIYO Fashion, we believe in sustainable and ethical manufacturing practices. We source our materials
-            responsibly and ensure fair working conditions for all our employees. Our goal is not just to create
-            beautiful garments but to do so in a way that respects both people and the planet.
-          </p> */}
+            We proudly operate state-of-the-art manufacturing facilities, where 
+             skilled artisans bring every concept to life with precision, care, and attention to detail. Our designs are developed in 
+             Australia, combining creativity and global trends to meet the needs of modern fashion brands.
+          </p>
+
+          <p className="text-neutral-600 mb-6">
+            Our commitment to excellence has made us a trusted partner for fashion brands of all sizes worldwide. Sustainability and ethical manufacturing are at the 
+             heart of everything we do. Our facilities include a recyclable mill, offering eco-friendly material options to help our partners 
+             reduce their environmental footprint.
+          </p>
         </div>
 
         {/* Values Section */}
@@ -57,24 +52,24 @@ export default function About() {
           <div className="text-center p-6">
             <h3 className="text-xl uppercase tracking-wider mb-4">Quality</h3>
             <p className="text-neutral-600">
-              We are committed to delivering products of the highest quality, paying attention to every detail from
-              fabric selection to final stitching.
+              We are dedicated to delivering products of the highest quality, with a strong emphasis on attention to detail from fabric 
+              sourcing to final packaging. Every step of our process reflects our premium one-stop service.
             </p>
           </div>
 
           <div className="text-center p-6">
             <h3 className="text-xl uppercase tracking-wider mb-4">Innovation</h3>
             <p className="text-neutral-600">
-              Our design team stays ahead of trends, constantly exploring new techniques and materials to create
-              innovative and unique designs.
+              Our Australian-based design team stays ahead of the curve, constantly exploring new techniques, 
+              materials, and trends to create fresh, fashion-forward collections.
             </p>
           </div>
 
           <div className="text-center p-6">
             <h3 className="text-xl uppercase tracking-wider mb-4">Reliability</h3>
             <p className="text-neutral-600">
-              We understand the importance of timely delivery and consistent quality, making us a reliable partner for
-              your fashion business.
+              We understand how crucial consistency and punctuality are in the fashion industry. That’s why we 
+              ensure dependable timelines and uncompromising quality—making us a trusted partner for your brand.
             </p>
           </div>
         </div>

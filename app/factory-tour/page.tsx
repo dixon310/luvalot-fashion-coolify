@@ -44,14 +44,15 @@ export default function FactoryTour() {
         <div className="grid grid-cols-1 gap-24 mb-16">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
             <div className="order-2 md:order-1">
-              <h3 className="text-xl uppercase tracking-wider mb-6">Design Studio</h3>
+              <h3 className="text-xl uppercase tracking-wider mb-6">Design Department</h3>
               <p className="text-neutral-600 mb-4">
-                Our modern design studio is where creativity flourishes. Equipped with the latest technology and tools,
-                our designers work tirelessly to create unique and trendy designs for our clients.
+                Our Australian based design team collaborates closely with experienced pattern makers to bring 
+                creative visions to life. Equipped with the latest technology and tools, they work tirelessly to craft 
+                unique, trend-driven designs tailored to our customers' needs. 
               </p>
               <p className="text-neutral-600">
-                The studio features dedicated spaces for sketching, digital design, and prototype development, allowing
-                our team to take concepts from idea to reality seamlessly.
+                Dedicated spaces for sketching, digital design, and prototype development enabling us to 
+                transform ideas into reality with precision and efficiency.
               </p>
             </div>
             <div className="order-1 md:order-2">
@@ -75,12 +76,12 @@ export default function FactoryTour() {
             <div>
               <h3 className="text-xl uppercase tracking-wider mb-6">Cutting Department</h3>
               <p className="text-neutral-600 mb-4">
-                Precision is key in our cutting department. Using advanced technology and skilled craftsmanship, we
-                ensure accurate patterns and minimal waste.
+                Precision is key in our cutting department. Using advanced technology and skilled craftsmanship, 
+                we ensure accurate pattern cutting with minimal waste.
               </p>
               <p className="text-neutral-600">
-                Our cutting machines are calibrated regularly to maintain the highest standards of precision, ensuring
-                that each piece meets our exacting specifications.
+                Our cutting machines are maintained and fine-tuned regularly to uphold the highest standards of 
+                accuracy, ensuring every piece meets our strict quality requirements.
               </p>
             </div>
           </div>
@@ -125,12 +126,13 @@ export default function FactoryTour() {
             <div>
               <h3 className="text-xl uppercase tracking-wider mb-6">Quality Control</h3>
               <p className="text-neutral-600 mb-4">
-                Rigorous inspection at every stage ensures only perfect garments reach our clients. Our quality control
-                team checks each item meticulously.
+                We are committed to delivering garments that meet the highest standards with thorough quality 
+                checks at every stage of production. Our dedicated quality control team carefully inspects each 
+                item before it reaches our customers.
               </p>
               <p className="text-neutral-600">
-                We have implemented a multi-point inspection system that examines everything from stitching quality to
-                fabric integrity, ensuring that every garment meets our high standards.
+                With a multi-point inspection system in place, we review everything from stitching accuracy to 
+                fabric integrity ensuring consistency, durability, and premium quality in every piece.
               </p>
             </div>
           </div>
