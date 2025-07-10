@@ -25,7 +25,7 @@ export default function Services() {
         "Ex-Works (EXW)",
         "FOB",
       ],
-      imageSrc: "/placeholder.svg?height=600&width=800&text=Private+Label",
+      imageSrc: "",
     },
     {
       id: "One-Stop-Services",
@@ -38,7 +38,7 @@ export default function Services() {
         "Rigorous quality control at every stage",
 
       ],
-      imageSrc: "/placeholder.svg?height=600&width=800&text=Design+Development",
+      imageSrc: "",
     },
     {
       id: "Private-Label-Capabilities",
@@ -49,7 +49,7 @@ export default function Services() {
         "We can create custom labels and packaging to enhance your brand identity.",
         "Our team ensures compliance with industry standards and regulations.",
       ],
-      imageSrc: "/placeholder.svg?height=600&width=800&text=Sustainable+Production",
+      imageSrc: "",
     },
     {
       id: "Design-Development",
@@ -61,7 +61,7 @@ export default function Services() {
         "From initial sketches to final prototypes, we handle every detail.",
         
       ],
-      imageSrc: "/placeholder.svg?height=600&width=800&text=Sustainable+Production",
+      imageSrc: "",
     },
     {
       id: "Logistics-Management",
@@ -71,8 +71,9 @@ export default function Services() {
         "We handle all aspects of logistics, from shipping to customs clearance.",
         "Our team ensures your products reach you on time and in perfect condition.",
         "We offer DDP (Delivered Duty Paid) and EXW (Ex-Works) options for flexibility.",
+        "Can collaborate seamlessly with your freight forwarders",
       ],
-      imageSrc: "/placeholder.svg?height=600&width=800&text=Sustainable+Production",
+      imageSrc: "",
     },
   ]
 
