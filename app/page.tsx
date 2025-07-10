@@ -381,23 +381,6 @@ export default function Home() {
                 </div>
               </Link>
             </div>
-
-            <div className="max-w-md mx-auto">
-              <h3 className="text-xl uppercase tracking-wider mb-4">Subscribe to Our Newsletter</h3>
-              <form className="flex">
-                <input
-                  type="email"
-                  placeholder="Your Email"
-                  className="flex-grow px-4 py-3 border border-neutral-300 focus:outline-none"
-                />
-                <button
-                  type="submit"
-                  className="bg-black text-white px-6 py-3 text-sm uppercase tracking-widest hover:bg-neutral-800 transition-colors"
-                >
-                  Subscribe
-                </button>
-              </form>
-            </div>
           </div>
         </section>
       </div>
