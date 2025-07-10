@@ -19,7 +19,7 @@ export default function FactoryTour() {
       {/* Hero Banner */}
       <div className="relative h-[40vh] w-full">
         <Image
-          src="/placeholder.svg?height=600&width=1920"
+          src="/Storage.png?height=600&width=1920"
           alt="Factory Tour Banner"
           fill
           priority
@@ -65,7 +65,7 @@ export default function FactoryTour() {
             <div>
               <div className="relative h-[400px] w-full overflow-hidden">
                 <Image
-                  src="/placeholder.svg?height=600&width=800"
+                  src="/QualityControl_hand.png?height=600&width=800"
                   alt="Cutting Department"
                   fill
                   className="object-cover"
@@ -100,7 +100,7 @@ export default function FactoryTour() {
             <div className="order-1 md:order-2">
               <div className="relative h-[400px] w-full overflow-hidden">
                 <Image
-                  src="/placeholder.svg?height=600&width=800"
+                  src="/Sewing.png?height=600&width=800"
                   alt="Sewing Department"
                   fill
                   className="object-cover"
