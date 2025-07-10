@@ -344,62 +344,6 @@ export default function Home() {
             </div>
           </div>
         </section>
-
-        {/* Connect With Us Section */}
-        <section className="py-20 bg-neutral-50 px-4">
-          <div className="container mx-auto text-center">
-            <h2 className="text-2xl font-light uppercase tracking-widest mb-8">Connect With Us</h2>
-            <p className="text-neutral-600 mb-12 max-w-2xl mx-auto">
-              Follow us on social media for the latest updates, behind-the-scenes content, and manufacturing insights.
-            </p>
-
-            <div className="flex justify-center space-x-8 mb-12">
-              <Link href="https://instagram.com" className="group">
-                <div className="flex flex-col items-center">
-                  <div className="w-16 h-16 flex items-center justify-center rounded-full border border-neutral-300 group-hover:border-black transition-colors mb-2">
-                    <Instagram size={28} className="text-neutral-700" />
-                  </div>
-                  <span className="text-sm uppercase tracking-wider">Instagram</span>
-                </div>
-              </Link>
-
-              <Link href="https://youtube.com" className="group">
-                <div className="flex flex-col items-center">
-                  <div className="w-16 h-16 flex items-center justify-center rounded-full border border-neutral-300 group-hover:border-black transition-colors mb-2">
-                    <Youtube size={28} className="text-neutral-700" />
-                  </div>
-                  <span className="text-sm uppercase tracking-wider">YouTube</span>
-                </div>
-              </Link>
-
-              <Link href="https://tiktok.com" className="group">
-                <div className="flex flex-col items-center">
-                  <div className="w-16 h-16 flex items-center justify-center rounded-full border border-neutral-300 group-hover:border-black transition-colors mb-2">
-                    <TikTokIcon size={28} className="text-neutral-700" />
-                  </div>
-                  <span className="text-sm uppercase tracking-wider">TikTok</span>
-                </div>
-              </Link>
-            </div>
-
-            <div className="max-w-md mx-auto">
-              <h3 className="text-xl uppercase tracking-wider mb-4">Subscribe to Our Newsletter</h3>
-              <form className="flex">
-                <input
-                  type="email"
-                  placeholder="Your Email"
-                  className="flex-grow px-4 py-3 border border-neutral-300 focus:outline-none"
-                />
-                <button
-                  type="submit"
-                  className="bg-black text-white px-6 py-3 text-sm uppercase tracking-widest hover:bg-neutral-800 transition-colors"
-                >
-                  Subscribe
-                </button>
-              </form>
-            </div>
-          </div>
-        </section>
       </div>
     </>
   )
