@@ -5,6 +5,7 @@ import type React from "react"
 import { useState } from "react"
 import { Mail, MapPin, Phone } from "lucide-react"
 import FaqAccordion from "@/components/faq-accordion"
+import Image from "next/image"
 
 // Metadata needs to be in a separate file for client components
 // See app/contact-us/metadata.ts
@@ -202,13 +203,17 @@ export default function ContactUs() {
 
   return (
     <div>
-      {/* Hero Section */}
-      <div className="bg-gradient-to-br from-neutral-50 to-neutral-100 py-20 px-4">
-        <div className="container mx-auto text-center">
-          <h1 className="text-4xl md:text-5xl font-light uppercase tracking-widest mb-6">Contact Us</h1>
-          <p className="text-lg text-neutral-600 max-w-2xl mx-auto">
-            Ready to bring your fashion vision to life? Get in touch with our team of experts.
-          </p>
+      {/* Hero Banner */}
+      <div className="relative h-[40vh] w-full">
+        <Image
+          src="/placeholder.svg?height=600&width=1920"
+          alt="Contact Banner"
+          fill
+          priority
+          className="object-cover"
+        />
+        <div className="absolute inset-0 flex items-center justify-center">
+          <h1 className="text-4xl font-light text-white uppercase tracking-widest">Contact Us</h1>
         </div>
       </div>
 
