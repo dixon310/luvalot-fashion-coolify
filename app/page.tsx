@@ -324,27 +324,6 @@ export default function Home() {
           </div>
         </section>
 
-        {/* FAQ Section */}
-        <section id="faq" className="py-20 px-4">
-          <div className="container mx-auto max-w-4xl">
-            <h2 className="text-2xl font-light text-center uppercase tracking-widest mb-16">
-              Frequently Asked Questions
-            </h2>
-
-            <FaqAccordion faqs={faqs} />
-
-            <div className="text-center mt-12">
-              <p className="text-neutral-600 mb-6">Have more questions? We're here to help.</p>
-              <Link
-                href="/contact-us"
-                className="inline-block border border-black px-8 py-3 text-sm uppercase tracking-widest hover:bg-black hover:text-white transition-colors"
-              >
-                Contact Us
-              </Link>
-            </div>
-          </div>
-        </section>
-
         {/* Connect With Us Section */}
         <section className="py-20 bg-neutral-50 px-4">
           <div className="container mx-auto text-center">

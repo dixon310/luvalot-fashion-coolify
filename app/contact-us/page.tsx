@@ -332,6 +332,147 @@ export default function ContactUs() {
           </form>
         </div>
       </div>
+
+      {/* FAQ Section */}
+      <div className="bg-neutral-50 py-16">
+        <div className="container mx-auto px-4 max-w-4xl">
+          <h2 className="text-2xl font-light text-center uppercase tracking-widest mb-16">
+            Frequently Asked Questions
+          </h2>
+
+          <div className="space-y-4">
+            <div className="border border-neutral-200 rounded overflow-hidden">
+              <button
+                className="w-full flex justify-between items-center p-4 text-left focus:outline-none"
+                onClick={() => {}}
+              >
+                <span className="font-medium">Where is your factory located? (City & Country)</span>
+                <span className="text-neutral-400">+</span>
+              </button>
+            </div>
+
+            <div className="border border-neutral-200 rounded overflow-hidden">
+              <button
+                className="w-full flex justify-between items-center p-4 text-left focus:outline-none"
+                onClick={() => {}}
+              >
+                <span className="font-medium">What is your minimum order quantity (MOQ) per style and per total order?</span>
+                <span className="text-neutral-400">+</span>
+              </button>
+            </div>
+
+            <div className="border border-neutral-200 rounded overflow-hidden">
+              <button
+                className="w-full flex justify-between items-center p-4 text-left focus:outline-none"
+                onClick={() => {}}
+              >
+                <span className="font-medium">Do you specialise in any particular types of dresses? (e.g., maxi, wrap, occasion, casual)</span>
+                <span className="text-neutral-400">+</span>
+              </button>
+            </div>
+
+            <div className="border border-neutral-200 rounded overflow-hidden">
+              <button
+                className="w-full flex justify-between items-center p-4 text-left focus:outline-none"
+                onClick={() => {}}
+              >
+                <span className="font-medium">Do you offer full package production (design, sampling, bulk), or only CMT services?</span>
+                <span className="text-neutral-400">+</span>
+              </button>
+            </div>
+
+            <div className="border border-neutral-200 rounded overflow-hidden">
+              <button
+                className="w-full flex justify-between items-center p-4 text-left focus:outline-none"
+                onClick={() => {}}
+              >
+                <span className="font-medium">Can you source fabrics, linings, and trims such as zippers, buttons, and embellishments?</span>
+                <span className="text-neutral-400">+</span>
+              </button>
+            </div>
+
+            <div className="border border-neutral-200 rounded overflow-hidden">
+              <button
+                className="w-full flex justify-between items-center p-4 text-left focus:outline-none"
+                onClick={() => {}}
+              >
+                <span className="font-medium">What fabrics do you commonly use for dresses? (e.g., rayon, viscose, cotton voile, chiffon)</span>
+                <span className="text-neutral-400">+</span>
+              </button>
+            </div>
+
+            <div className="border border-neutral-200 rounded overflow-hidden">
+              <button
+                className="w-full flex justify-between items-center p-4 text-left focus:outline-none"
+                onClick={() => {}}
+              >
+                <span className="font-medium">What are your typical lead times for sample development and bulk production?</span>
+                <span className="text-neutral-400">+</span>
+              </button>
+            </div>
+
+            <div className="border border-neutral-200 rounded overflow-hidden">
+              <button
+                className="w-full flex justify-between items-center p-4 text-left focus:outline-none"
+                onClick={() => {}}
+              >
+                <span className="font-medium">Do you offer services for custom prints, embroidery, or beading?</span>
+                <span className="text-neutral-400">+</span>
+              </button>
+            </div>
+
+            <div className="border border-neutral-200 rounded overflow-hidden">
+              <button
+                className="w-full flex justify-between items-center p-4 text-left focus:outline-none"
+                onClick={() => {}}
+              >
+                <span className="font-medium">Do you provide custom labels, hangtags, and packaging?</span>
+                <span className="text-neutral-400">+</span>
+              </button>
+            </div>
+
+            <div className="border border-neutral-200 rounded overflow-hidden">
+              <button
+                className="w-full flex justify-between items-center p-4 text-left focus:outline-none"
+                onClick={() => {}}
+              >
+                <span className="font-medium">Do you manage shipping and export documentation?</span>
+                <span className="text-neutral-400">+</span>
+              </button>
+            </div>
+
+            <div className="border border-neutral-200 rounded overflow-hidden">
+              <button
+                className="w-full flex justify-between items-center p-4 text-left focus:outline-none"
+                onClick={() => {}}
+              >
+                <span className="font-medium">Do you have a website or digital catalogue to view past styles?</span>
+                <span className="text-neutral-400">+</span>
+              </button>
+            </div>
+
+            <div className="border border-neutral-200 rounded overflow-hidden">
+              <button
+                className="w-full flex justify-between items-center p-4 text-left focus:outline-none"
+                onClick={() => {}}
+              >
+                <span className="font-medium">What certifications or audits does your facility hold? (e.g., OEKO-TEX, GOTS)</span>
+                <span className="text-neutral-400">+</span>
+              </button>
+            </div>
+
+            <div className="border border-neutral-200 rounded overflow-hidden">
+              <button
+                className="w-full flex justify-between items-center p-4 text-left focus:outline-none"
+                onClick={() => {}}
+              >
+                <span className="font-medium">How do you typically collaborate with new fashion clients? (Design rounds, tech packs, fitting process, etc.)</span>
+                <span className="text-neutral-400">+</span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   )
 }
