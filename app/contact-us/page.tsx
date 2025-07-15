@@ -214,7 +214,7 @@ export default function ContactUs() {
           
           {/* Contact Information */}
           <div className="lg:col-span-1">
-            <div className="bg-white p-8 rounded-lg shadow-sm border border-neutral-100 h-fit sticky top-8">
+            <div className="bg-white p-8 rounded-lg shadow-sm h-fit sticky top-8">
               <h2 className="text-2xl font-light uppercase tracking-wider mb-8">Get In Touch</h2>
               
               <p className="text-neutral-600 mb-8 leading-relaxed">
@@ -269,7 +269,7 @@ export default function ContactUs() {
 
           {/* Contact Form */}
           <div className="lg:col-span-2">
-            <div className="bg-white p-8 rounded-lg shadow-sm border border-neutral-100">
+            <div className="bg-white p-8 rounded-lg shadow-sm">
               <h2 className="text-2xl font-light uppercase tracking-wider mb-8">Send Us a Message</h2>
 
               {formState.message && (
