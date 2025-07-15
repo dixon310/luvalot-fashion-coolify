@@ -25,19 +25,19 @@ export default function About() {
         <div className="max-w-3xl mx-auto">
           <h2 className="text-2xl font-light uppercase tracking-widest mb-8 text-center">Our Story</h2>
 
-          <p className="text-neutral-600 mb-6">
+          <p className="text-neutral-600 mb-6 text-center">
             MIYO Fashion was founded with a clear vision: to provide exceptional OEM and ODM services to fashion brands
              across the globe. With years of industry experience, our team deeply understands the importance of quality, 
              innovative design, and reliable delivery. 
           </p>
 
-          <p className="text-neutral-600 mb-6">
+          <p className="text-neutral-600 mb-6 text-center">
             We proudly operate state-of-the-art manufacturing facilities, where 
              skilled artisans bring every concept to life with precision, care, and attention to detail. Our designs are developed in 
              Australia, combining creativity and global trends to meet the needs of modern fashion brands.
           </p>
 
-          <p className="text-neutral-600 mb-6">
+          <p className="text-neutral-600 mb-6 text-center">
             Our commitment to excellence has made us a trusted partner for fashion brands of all sizes worldwide. Sustainability and ethical manufacturing are at the 
              heart of everything we do. Our facilities include a recyclable mill, offering eco-friendly material options to help our partners 
              reduce their environmental footprint.
