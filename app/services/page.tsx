@@ -75,27 +75,21 @@ export default function Services() {
     <div>
       {/* Hero Banner */}
       <div className="relative h-[18vh] w-full bg-neutral-50 flex items-center justify-center shadow-sm">
-        <h1 className="text-5xl font-light text-neutral-900 uppercase tracking-widest">Our Services</h1>
+        <h1 className="text-4xl font-light text-neutral-900 uppercase tracking-widest">Our Services</h1>
       </div>
 
       {/* Services Overview */}
       <div className="container mx-auto px-4 py-20">
-        <div className="max-w-3xl mx-auto mb-20">
-          <div className="grid grid-cols-1 gap-8">
-            <div>
-              <h3 className="text-xl uppercase tracking-wider mb-6 text-center">
-                Premium Manufacturing Solutions
-              </h3>
-              <p className="text-neutral-600 mb-4 text-center">
-                With 15 years of industry experience, MIYO Fashion provides comprehensive manufacturing services for fashion brands worldwide.
-                From design and development to production and delivery, we handle every step with precision and care.
-              </p>
-            </div>
-          </div>
+        <div className="max-w-3xl mx-auto">
+          <h2 className="text-2xl font-light uppercase tracking-widest mb-8 text-center">Premium Manufacturing Solutions</h2>
+          <p className="text-neutral-600 mb-6 text-center">
+            With 15 years of industry experience, MIYO Fashion provides comprehensive manufacturing services for fashion brands worldwide.
+            From design and development to production and delivery, we handle every step with precision and care.
+          </p>
         </div>
 
         {/* Service Sections as Alternating Left/Right Boxes */}
-        <div className="max-w-3xl mx-auto flex flex-col gap-12">
+        <div className="max-w-3xl mx-auto flex flex-col gap-12 mt-16">
           {services.map((service, idx) => (
             <div
               key={service.id}
