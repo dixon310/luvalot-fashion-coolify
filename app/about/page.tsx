@@ -16,11 +16,8 @@ export default function About() {
   return (
     <div>
       {/* Hero Banner */}
-      <div className="relative h-[40vh] w-full">
-        <Image src="/placeholder.svg?height=600&width=1920" alt="About Banner" fill priority className="object-cover" />
-        <div className="absolute inset-0 flex items-center justify-center">
-          <h1 className="text-4xl font-light text-white uppercase tracking-widest">About Us</h1>
-        </div>
+      <div className="relative h-[18vh] w-full bg-neutral-50 flex items-center justify-center shadow-sm">
+        <h1 className="text-4xl font-light text-neutral-900 uppercase tracking-widest">About Us</h1>
       </div>
 
       {/* About Content */}

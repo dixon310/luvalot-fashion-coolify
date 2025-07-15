@@ -17,17 +17,8 @@ export default function FactoryTour() {
   return (
     <div>
       {/* Hero Banner */}
-      <div className="relative h-[40vh] w-full">
-        <Image
-          src="/Storage.png?height=600&width=1920"
-          alt="Factory Tour Banner"
-          fill
-          priority
-          className="object-cover opacity-50"
-        />
-        <div className="absolute inset-0 flex items-center justify-center">
-          <h1 className="text-4xl font-light text-white uppercase tracking-widest">Factory Tour</h1>
-        </div>
+      <div className="relative h-[18vh] w-full bg-neutral-50 flex items-center justify-center shadow-sm">
+        <h1 className="text-4xl font-light text-neutral-900 uppercase tracking-widest">Factory Tour</h1>
       </div>
 
       {/* Tour Content */}
@@ -46,12 +37,12 @@ export default function FactoryTour() {
             <div className="order-2 md:order-1">
               <h3 className="text-xl uppercase tracking-wider mb-6">Design Department</h3>
               <p className="text-neutral-600 mb-4">
-                Our Australian based design team collaborates closely with experienced pattern makers to bring 
-                creative visions to life. Equipped with the latest technology and tools, they work tirelessly to craft 
-                unique, trend-driven designs tailored to our customers' needs. 
+                Our Australian based design team collaborates closely with experienced pattern makers to bring
+                creative visions to life. Equipped with the latest technology and tools, they work tirelessly to craft
+                unique, trend-driven designs tailored to our customers' needs.
               </p>
               <p className="text-neutral-600">
-                Dedicated spaces for sketching, digital design, and prototype development enabling us to 
+                Dedicated spaces for sketching, digital design, and prototype development enabling us to
                 transform ideas into reality with precision and efficiency.
               </p>
             </div>
@@ -76,11 +67,11 @@ export default function FactoryTour() {
             <div>
               <h3 className="text-xl uppercase tracking-wider mb-6">Cutting Department</h3>
               <p className="text-neutral-600 mb-4">
-                Precision is key in our cutting department. Using advanced technology and skilled craftsmanship, 
+                Precision is key in our cutting department. Using advanced technology and skilled craftsmanship,
                 we ensure accurate pattern cutting with minimal waste.
               </p>
               <p className="text-neutral-600">
-                Our cutting machines are maintained and fine-tuned regularly to uphold the highest standards of 
+                Our cutting machines are maintained and fine-tuned regularly to uphold the highest standards of
                 accuracy, ensuring every piece meets our strict quality requirements.
               </p>
             </div>
@@ -126,12 +117,12 @@ export default function FactoryTour() {
             <div>
               <h3 className="text-xl uppercase tracking-wider mb-6">Quality Control</h3>
               <p className="text-neutral-600 mb-4">
-                We are committed to delivering garments that meet the highest standards with thorough quality 
-                checks at every stage of production. Our dedicated quality control team carefully inspects each 
+                We are committed to delivering garments that meet the highest standards with thorough quality
+                checks at every stage of production. Our dedicated quality control team carefully inspects each
                 item before it reaches our customers.
               </p>
               <p className="text-neutral-600">
-                With a multi-point inspection system in place, we review everything from stitching accuracy to 
+                With a multi-point inspection system in place, we review everything from stitching accuracy to
                 fabric integrity ensuring consistency, durability, and premium quality in every piece.
               </p>
             </div>
