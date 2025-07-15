@@ -95,40 +95,24 @@ export default function Services() {
           </p>
         </div>
 
-        {/* Service Sections */}
-        <div className="space-y-24">
-          {services.map((service, index) => (
+        {/* New List Style Service Sections */}
+        <div className="max-w-4xl mx-auto space-y-12">
+          {services.map((service) => (
             <div
               key={service.id}
-              className={`grid grid-cols-1 lg:grid-cols-2 gap-12 items-center ${index % 2 === 1 ? "lg:flex-row-reverse" : ""}`}
+              className="bg-white rounded-lg shadow-sm p-8 flex flex-col md:flex-row md:items-center md:gap-8"
             >
-              <div className={`order-2 ${index % 2 === 1 ? "lg:order-1" : "lg:order-2"}`}>
-                <div className="relative h-[400px] w-full overflow-hidden rounded">
-                  <Image
-                    src={service.imageSrc || "/placeholder.svg"}
-                    alt={service.title}
-                    fill
-                    className="object-cover"
-                  />
-                </div>
-              </div>
-              <div className={`order-1 ${index % 2 === 1 ? "lg:order-2" : "lg:order-1"}`}>
-                <h3 className="text-2xl uppercase tracking-wider mb-4">{service.title}</h3>
-                <p className="text-neutral-600 mb-6">{service.description}</p>
-                <ul className="space-y-3 mb-8">
+              <div className="flex-1">
+                <h3 className="text-xl md:text-2xl uppercase tracking-wider mb-2 text-neutral-900">{service.title}</h3>
+                <p className="text-neutral-600 mb-4">{service.description}</p>
+                <ul className="space-y-2">
                   {service.features.map((feature, i) => (
                     <li key={i} className="flex items-start">
-                      <CheckCircle size={20} className="text-neutral-700 mr-3 flex-shrink-0 mt-0.5" />
+                      <CheckCircle size={18} className="text-neutral-700 mr-2 flex-shrink-0 mt-0.5" />
                       <span>{feature}</span>
                     </li>
                   ))}
                 </ul>
-                {/* <Link
-                  href={`/services/${service.id}`}
-                  className="inline-block border border-black px-8 py-3 text-sm uppercase tracking-widest hover:bg-black hover:text-white transition-colors"
-                >
-                  Learn More
-                </Link> */}
               </div>
             </div>
           ))}
