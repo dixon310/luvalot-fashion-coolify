@@ -1,6 +1,6 @@
 import Image from "next/image"
 import Link from "next/link"
-import { CheckCircle } from "lucide-react"
+import { CheckCircle, BadgeDollarSign, PackageCheck, Tag, PencilRuler, Truck } from "lucide-react"
 import type { Metadata } from "next"
 
 export const metadata: Metadata = {
@@ -19,61 +19,55 @@ export default function Services() {
     {
       id: "Pricing-Flexibility",
       title: "Pricing Flexibility",
-      description: "We offer flexible pricing options to suit your brand's needs, whether you're a startup or an established label.",
-      features: [
-        "DDP",
-        "Ex-Works (EXW)",
-        "FOB",
-      ],
-      imageSrc: "",
+      description: "Flexible pricing options to suit your brand's needs, whether you're a startup or an established label.",
+      icon: <BadgeDollarSign size={72} className="text-black mb-6" />,
+      features: ["DDP", "Ex-Works (EXW)", "FOB"],
     },
     {
       id: "One-Stop-Services",
       title: "One-Stop Services",
-      description: "Full-package production services: design, sourcing, fitting, quality control, and delivery.",
+      description: "Full-package production: design, sourcing, fitting, quality control, and delivery.",
+      icon: <PackageCheck size={72} className="text-black mb-6" />,
       features: [
-        "Comprehensive design and development services",
-        "Sourcing of high-quality materials and trims",
-        "Expert fitting and pattern making",
-        "Rigorous quality control at every stage",
-
+        "Comprehensive design & development",
+        "Sourcing high-quality materials",
+        "Expert fitting & pattern making",
+        "Rigorous quality control",
       ],
-      imageSrc: "",
     },
     {
       id: "Private-Label-Capabilities",
       title: "Private Label Capabilities",
-      description: "We specialize in private label manufacturing, allowing you to create your own brand with our high-quality products.",
+      description: "Specialists in private label manufacturing to help you build your own brand.",
+      icon: <Tag size={72} className="text-black mb-6" />,
       features: [
-        "MIYO Fashion offers barcode generation and private label solutions.",
-        "We can create custom labels and packaging to enhance your brand identity.",
-        "Our team ensures compliance with industry standards and regulations.",
+        "Barcode generation & private label solutions",
+        "Custom labels & packaging",
+        "Compliance with industry standards",
       ],
-      imageSrc: "",
     },
     {
       id: "Design-Development",
       title: "Design & Development",
-      description: "Comprehensive design and development services to bring your fashion ideas to life.",
+      description: "Comprehensive design and development to bring your fashion ideas to life.",
+      icon: <PencilRuler size={72} className="text-black mb-6" />,
       features: [
-        "Our design team is based in Australia, ensuring a global perspective.",
-        "We collaborate closely with you to understand your vision and requirements.",
-        "From initial sketches to final prototypes, we handle every detail.",
-        
+        "Australian-based design team",
+        "Collaborative creative process",
+        "From sketches to prototypes",
       ],
-      imageSrc: "",
     },
     {
       id: "Logistics-Management",
       title: "Logistics Management",
-      description: "Efficient logistics management to ensure timely delivery of your products.",
+      description: "Efficient logistics for timely delivery and seamless collaboration.",
+      icon: <Truck size={72} className="text-black mb-6" />,
       features: [
-        "We handle all aspects of logistics, from shipping to customs clearance.",
-        "Our team ensures your products reach you on time and in perfect condition.",
-        "We offer DDP (Delivered Duty Paid) and EXW (Ex-Works) options for flexibility.",
-        "Can collaborate seamlessly with your freight forwarders",
+        "Shipping & customs clearance",
+        "On-time delivery",
+        "DDP & EXW options",
+        "Collaboration with freight forwarders",
       ],
-      imageSrc: "",
     },
   ]
 
@@ -81,54 +75,41 @@ export default function Services() {
     <div>
       {/* Hero Banner */}
       <div className="relative h-[18vh] w-full bg-neutral-50 flex items-center justify-center shadow-sm">
-        <h1 className="text-4xl font-light text-neutral-900 uppercase tracking-widest">Our Services</h1>
+        <h1 className="text-5xl font-light text-neutral-900 uppercase tracking-widest">Our Services</h1>
       </div>
 
       {/* Services Overview */}
-      <div className="container mx-auto px-4 py-16">
-        <div className="max-w-3xl mx-auto text-center mb-16">
-          <h2 className="text-2xl font-light uppercase tracking-widest mb-8">Premium Manufacturing Solutions</h2>
-          <p className="text-neutral-600">
-            With 15 years of industry experience, we provide comprehensive manufacturing services for fashion brands
-            worldwide. From design and development to production and delivery, we handle every step of the process with
-            precision and care.
+      <div className="container mx-auto px-4 py-20">
+        <div className="max-w-3xl mx-auto text-center mb-20">
+          <h2 className="text-3xl font-light uppercase tracking-widest mb-6 text-neutral-900">
+            Premium Manufacturing Solutions
+          </h2>
+          <p className="text-neutral-600 text-lg">
+            With 15 years of industry experience, MIYO Fashion provides comprehensive manufacturing services for fashion brands worldwide. From design and development to production and delivery, we handle every step with precision and care.
           </p>
         </div>
 
-        {/* Service Sections */}
-        <div className="space-y-24">
-          {services.map((service, index) => (
+        {/* Service Sections as Alternating Left/Right Boxes */}
+        <div className="max-w-3xl mx-auto flex flex-col gap-12">
+          {services.map((service, idx) => (
             <div
               key={service.id}
-              className={`grid grid-cols-1 lg:grid-cols-2 gap-12 items-center ${index % 2 === 1 ? "lg:flex-row-reverse" : ""}`}
+              className={`bg-white rounded-xl shadow-md p-10 flex flex-col md:flex-row items-center ${
+                idx % 2 === 0 ? "md:flex-row" : "md:flex-row-reverse"
+              }`}
             >
-              <div className={`order-2 ${index % 2 === 1 ? "lg:order-1" : "lg:order-2"}`}>
-                <div className="relative h-[400px] w-full overflow-hidden rounded">
-                  <Image
-                    src={service.imageSrc || "/placeholder.svg"}
-                    alt={service.title}
-                    fill
-                    className="object-cover"
-                  />
-                </div>
-              </div>
-              <div className={`order-1 ${index % 2 === 1 ? "lg:order-2" : "lg:order-1"}`}>
-                <h3 className="text-2xl uppercase tracking-wider mb-4">{service.title}</h3>
-                <p className="text-neutral-600 mb-6">{service.description}</p>
-                <ul className="space-y-3 mb-8">
+              <div className="mb-6 md:mb-0 md:mx-8 flex-shrink-0 self-center">{service.icon}</div>
+              <div className="flex-1 w-full">
+                <h3 className="text-xl font-semibold uppercase tracking-wider mb-3 text-neutral-900">{service.title}</h3>
+                <p className="text-neutral-600 mb-6 text-left">{service.description}</p>
+                <ul className="space-y-2">
                   {service.features.map((feature, i) => (
-                    <li key={i} className="flex items-start">
-                      <CheckCircle size={20} className="text-neutral-700 mr-3 flex-shrink-0 mt-0.5" />
+                    <li key={i} className="flex items-center">
+                      <CheckCircle size={18} className="text-green-500 mr-2 flex-shrink-0 mt-0.5" />
                       <span>{feature}</span>
                     </li>
                   ))}
                 </ul>
-                {/* <Link
-                  href={`/services/${service.id}`}
-                  className="inline-block border border-black px-8 py-3 text-sm uppercase tracking-widest hover:bg-black hover:text-white transition-colors"
-                >
-                  Learn More
-                </Link> */}
               </div>
             </div>
           ))}
@@ -139,13 +120,12 @@ export default function Services() {
       <div className="bg-neutral-50 py-16">
         <div className="container mx-auto px-4 text-center">
           <h2 className="text-2xl font-light uppercase tracking-widest mb-6">Ready to Start Your Project?</h2>
-          <p className="text-neutral-600 mb-8 max-w-2xl mx-auto">
-            Contact us today to discuss your manufacturing needs and discover how we can bring your fashion vision to
-            life.
+          <p className="text-neutral-600 mb-8 max-w-2xl mx-auto text-lg">
+            Contact us today to discuss your manufacturing needs and discover how we can bring your fashion vision to life.
           </p>
           <Link
             href="/contact-us"
-            className="inline-block border border-black px-8 py-3 text-sm uppercase tracking-widest hover:bg-black hover:text-white transition-colors"
+            className="inline-block border border-black px-8 py-3 text-sm uppercase tracking-widest rounded hover:bg-black hover:text-white transition-colors"
           >
             Contact Us
           </Link>
