@@ -80,13 +80,18 @@ export default function Services() {
 
       {/* Services Overview */}
       <div className="container mx-auto px-4 py-20">
-        <div className="max-w-3xl mx-auto text-center mb-20">
-          <h2 className="text-3xl font-light uppercase tracking-widest mb-6 text-neutral-900">
-            Premium Manufacturing Solutions
-          </h2>
-          <p className="text-neutral-600 text-lg">
-            With 15 years of industry experience, MIYO Fashion provides comprehensive manufacturing services for fashion brands worldwide. From design and development to production and delivery, we handle every step with precision and care.
-          </p>
+        <div className="max-w-3xl mx-auto mb-20">
+          <div className="grid grid-cols-1 gap-8">
+            <div>
+              <h3 className="text-xl uppercase tracking-wider mb-6 text-center">
+                Premium Manufacturing Solutions
+              </h3>
+              <p className="text-neutral-600 mb-4 text-center">
+                With 15 years of industry experience, MIYO Fashion provides comprehensive manufacturing services for fashion brands worldwide.
+                From design and development to production and delivery, we handle every step with precision and care.
+              </p>
+            </div>
+          </div>
         </div>
 
         {/* Service Sections as Alternating Left/Right Boxes */}
@@ -100,7 +105,7 @@ export default function Services() {
             >
               <div className="mb-6 md:mb-0 md:mx-8 flex-shrink-0 self-center">{service.icon}</div>
               <div className="flex-1 w-full">
-                <h3 className="text-xl font-semibold uppercase tracking-wider mb-3 text-neutral-900">{service.title}</h3>
+                <h3 className="text-xl uppercase tracking-wider mb-3 text-neutral-900 font-light">{service.title}</h3>
                 <p className="text-neutral-600 mb-6 text-left">{service.description}</p>
                 <ul className="space-y-2">
                   {service.features.map((feature, i) => (
@@ -134,4 +139,3 @@ export default function Services() {
     </div>
   )
 }
-
