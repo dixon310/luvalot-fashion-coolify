@@ -17,13 +17,6 @@ export const metadata: Metadata = {
 export default function Services() {
   const services = [
     {
-      id: "Pricing-Flexibility",
-      title: "Pricing Flexibility",
-      description: "Flexible pricing options to suit your brand's needs, whether you're a startup or an established label.",
-      icon: <BadgeDollarSign size={72} className="text-black mb-6" />,
-      features: ["DDP", "Ex-Works (EXW)", "FOB"],
-    },
-    {
       id: "One-Stop-Services",
       title: "One-Stop Services",
       description: "Full-package production: design, sourcing, fitting, quality control, and delivery.",
@@ -33,6 +26,17 @@ export default function Services() {
         "Sourcing high-quality materials",
         "Expert fitting & pattern making",
         "Rigorous quality control",
+      ],
+    },
+    {
+      id: "Design-Development",
+      title: "Design & Development",
+      description: "Comprehensive design and development to bring your fashion ideas to life.",
+      icon: <PencilRuler size={72} className="text-black mb-6" />,
+      features: [
+        "Australian-based design team",
+        "Collaborative creative process",
+        "From sketches to prototypes",
       ],
     },
     {
@@ -47,15 +51,11 @@ export default function Services() {
       ],
     },
     {
-      id: "Design-Development",
-      title: "Design & Development",
-      description: "Comprehensive design and development to bring your fashion ideas to life.",
-      icon: <PencilRuler size={72} className="text-black mb-6" />,
-      features: [
-        "Australian-based design team",
-        "Collaborative creative process",
-        "From sketches to prototypes",
-      ],
+      id: "Pricing-Flexibility",
+      title: "Pricing Flexibility",
+      description: "Flexible pricing options to suit your brand's needs, whether you're a startup or an established label.",
+      icon: <BadgeDollarSign size={72} className="text-black mb-6" />,
+      features: ["DDP", "Ex-Works (EXW)", "FOB"],
     },
     {
       id: "Logistics-Management",
