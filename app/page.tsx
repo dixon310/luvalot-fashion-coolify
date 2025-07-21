@@ -291,10 +291,10 @@ export default function Home() {
               <div className="text-center">
                 <div className="relative h-[250px] w-full overflow-hidden mb-6 rounded">
                   <Image
-                    src="https://images.unsplash.com/photo-1518623489648-a173ef7824f3?q=80&w=600&auto=format&fit=crop"
-                    alt="China Factory"
-                    fill
-                    className="object-cover"
+                  src="/China.jpg"
+                  alt="China Factory"
+                  fill
+                  className="object-cover"
                   />
                 </div>
                 <h3 className="text-xl uppercase tracking-wider mb-2">China</h3>
