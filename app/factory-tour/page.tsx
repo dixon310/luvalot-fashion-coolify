@@ -47,9 +47,9 @@ export default function FactoryTour() {
               </p>
             </div>
             <div className="order-1 md:order-2">
-              <div className="relative h-[400px] w-full overflow-hidden">
-                <Image src="/placeholder.svg?height=600&width=800" alt="Design Studio" fill className="object-cover" />
-              </div>
+                <div className="relative h-[400px] w-full overflow-hidden">
+                <Image src="/Design Department.jpg?height=600&width=800" alt="Design Department" fill className="object-cover" />
+                </div>
             </div>
           </div>
 
