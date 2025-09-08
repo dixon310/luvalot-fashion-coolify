@@ -129,6 +129,35 @@ export default function FactoryTour() {
           </div>
         </div>
 
+        {/* YouTube Short Section */}
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+          <div>
+            <div className="relative h-[400px] w-full overflow-hidden rounded">
+              <iframe
+                src="https://www.youtube.com/embed/sb_zheTKL3o"
+                title="Factory Production Process - YouTube Short"
+                className="absolute inset-0 w-full h-full"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowFullScreen
+                loading="lazy"
+              ></iframe>
+            </div>
+          </div>
+          <div>
+            <h3 className="text-xl uppercase tracking-wider mb-6">Behind the Scenes</h3>
+            <p className="text-neutral-600 mb-4">
+              Get an exclusive look at our manufacturing process in action. This behind-the-scenes footage 
+              showcases the precision, skill, and attention to detail that goes into every garment we produce.
+            </p>
+            <p className="text-neutral-600">
+              From cutting to finishing, witness the craftsmanship and dedication of our team as they 
+              bring fashion designs to life with expertise and care.
+            </p>
+          </div>
+        </div>
+
+      </div>
+
         {/* CTA Section */}
         <div className="text-center py-12 border-t border-neutral-200">
           <h2 className="text-2xl font-light uppercase tracking-widest mb-6">Schedule Your Tour</h2>
