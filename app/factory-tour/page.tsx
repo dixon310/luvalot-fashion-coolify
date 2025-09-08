@@ -47,9 +47,9 @@ export default function FactoryTour() {
               </p>
             </div>
             <div className="order-1 md:order-2">
-                <div className="relative h-[400px] w-full overflow-hidden">
+              <div className="relative h-[400px] w-full overflow-hidden">
                 <Image src="/Design Department.jpg?height=600&width=800" alt="Design Department" fill className="object-cover" />
-                </div>
+              </div>
             </div>
           </div>
 
@@ -127,27 +127,33 @@ export default function FactoryTour() {
               </p>
             </div>
           </div>
-        </div>
 
-        {/* YouTube Short */}
-        <div className="container mx-auto px-4 py-12">
-        <div className="max-w-3xl mx-auto text-center mb-6">
-          <h2 className="text-2xl font-light uppercase tracking-widest mb-2">Quick Factory Look</h2>
-          <p className="text-neutral-600 mb-6">A short behind-the-scenes clip from our production floor.</p>
-        </div>
-
-        <div className="flex justify-center">
-          <div className="w-[300px] sm:w-[360px] md:w-[420px] lg:w-[480px]">
-            <iframe
-              src="https://www.youtube.com/embed/sb_zheTKL3o"
-              title="MIYO Factory Short"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-              allowFullScreen
-              className="w-full aspect-[9/16] rounded-lg shadow-md"
-            />
+          {/* YouTube Short as part of Facility Sections */}
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+            <div>
+              <div className="relative h-[480px] w-full overflow-hidden rounded">
+                <iframe
+                  src="https://www.youtube.com/embed/sb_zheTKL3o"
+                  title="MIYO Factory Short"
+                  className="absolute inset-0 w-full h-full"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                  allowFullScreen
+                  loading="lazy"
+                />
+              </div>
+            </div>
+            <div>
+              <h3 className="text-xl uppercase tracking-wider mb-6">Quick Factory Look</h3>
+              <p className="text-neutral-600 mb-4">
+                A short behind-the-scenes clip from our production floor. This quick short highlights key moments from our workflow
+                — perfect for a fast preview of our process and craftsmanship.
+              </p>
+              <p className="text-neutral-600">
+                Tap play to view a vertical short optimized for mobile viewing.
+              </p>
+            </div>
           </div>
         </div>
-      </div>
 
         {/* CTA Section */}
         <div className="text-center py-12 border-t border-neutral-200">
