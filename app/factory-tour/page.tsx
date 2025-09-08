@@ -128,8 +128,19 @@ export default function FactoryTour() {
             </div>
           </div>
 
-          {/* YouTube Short as part of Facility Sections */}
+          {/* YouTube Short as part of Facility Sections (text left, short on the right) */}
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+            <div>
+              <h3 className="text-xl uppercase tracking-wider mb-6">Quick Factory Look</h3>
+              <p className="text-neutral-600 mb-4">
+                A short behind-the-scenes clip from our production floor. This quick short highlights key moments from our workflow
+                — perfect for a fast preview of our process and craftsmanship.
+              </p>
+              <p className="text-neutral-600">
+                Tap play to view a vertical short optimized for mobile viewing.
+              </p>
+            </div>
+
             <div>
               <div className="relative h-[480px] w-full overflow-hidden rounded">
                 <iframe
@@ -141,16 +152,6 @@ export default function FactoryTour() {
                   loading="lazy"
                 />
               </div>
-            </div>
-            <div>
-              <h3 className="text-xl uppercase tracking-wider mb-6">Quick Factory Look</h3>
-              <p className="text-neutral-600 mb-4">
-                A short behind-the-scenes clip from our production floor. This quick short highlights key moments from our workflow
-                — perfect for a fast preview of our process and craftsmanship.
-              </p>
-              <p className="text-neutral-600">
-                Tap play to view a vertical short optimized for mobile viewing.
-              </p>
             </div>
           </div>
         </div>
