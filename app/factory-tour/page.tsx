@@ -129,6 +129,26 @@ export default function FactoryTour() {
           </div>
         </div>
 
+        {/* YouTube Short */}
+        <div className="container mx-auto px-4 py-12">
+        <div className="max-w-3xl mx-auto text-center mb-6">
+          <h2 className="text-2xl font-light uppercase tracking-widest mb-2">Quick Factory Look</h2>
+          <p className="text-neutral-600 mb-6">A short behind-the-scenes clip from our production floor.</p>
+        </div>
+
+        <div className="flex justify-center">
+          <div className="w-[300px] sm:w-[360px] md:w-[420px] lg:w-[480px]">
+            <iframe
+              src="https://www.youtube.com/embed/sb_zheTKL3o"
+              title="MIYO Factory Short"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowFullScreen
+              className="w-full aspect-[9/16] rounded-lg shadow-md"
+            />
+          </div>
+        </div>
+      </div>
+
         {/* CTA Section */}
         <div className="text-center py-12 border-t border-neutral-200">
           <h2 className="text-2xl font-light uppercase tracking-widest mb-6">Schedule Your Tour</h2>
