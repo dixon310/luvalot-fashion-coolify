@@ -157,25 +157,24 @@ export default function Home() {
       <OrganizationStructuredData />
       <ServiceStructuredData />
       <div>
-        {/* Hero Section - Image Slider */}
         <HeroSlider
           slides={[
             {
-              imageSrc: "https://images.unsplash.com/photo-1556905055-8f358a7a47b2?q=80&w=1920&auto=format&fit=crop",
+              imageSrc: "/HomePageImage1.jpg",
               heading: "Private Label Manufacturing",
               subheading: "Premium clothing production with 15 years of industry experience",
               buttonText: "Explore Our Services",
               buttonLink: "/services",
             },
             {
-              imageSrc: "https://images.unsplash.com/photo-1556905055-8f358a7a47b2?q=80&w=1920&auto=format&fit=crop",
+              imageSrc: "/HomePageImage2.jpg",
               heading: "Bespoke Design & Development",
               subheading: "From concept to creation with our expert in house design and production team",
               buttonText: "Bespoke Design & Development",
               // buttonLink: "#process",
             },
             {
-              imageSrc: "https://images.unsplash.com/photo-1558769132-cb1aea458c5e?q=80&w=1920&auto=format&fit=crop",
+              imageSrc: "/HomePageImage3.jpg",
               heading: "Sustainable Manufacturing",
               subheading: "Eco-friendly options and responsible production practices",
               buttonText: "Learn More",
