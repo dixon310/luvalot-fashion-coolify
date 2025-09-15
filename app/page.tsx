@@ -302,10 +302,10 @@ export default function Home() {
               <div className="text-center">
                 <div className="relative h-[250px] w-full overflow-hidden mb-6 rounded">
                   <Image
-                    src="https://images.unsplash.com/photo-1589792923962-537704632910?q=80&w=2940&auto=format&fit=crop"
-                    alt="Vietnam Factory"
-                    fill
-                    className="object-cover"
+                  src="/Vietnam.jpeg"
+                  alt="Vietnam Factory"
+                  fill
+                  className="object-cover"
                   />
                 </div>
                 <h3 className="text-xl uppercase tracking-wider mb-2">Vietnam</h3>
