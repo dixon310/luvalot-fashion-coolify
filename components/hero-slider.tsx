@@ -73,6 +73,9 @@ export default function HeroSlider({ slides, autoplaySpeed = 5000 }: HeroSliderP
           </div>
         ))}
 
+        {/* Gradient overlay to improve contrast (keeps heading readable) */}
+        <div className="absolute inset-0 z-10 pointer-events-none bg-gradient-to-r from-black/60 via-black/20 to-transparent" />
+
         {/* Slider navigation dots - always rendered but controlled by opacity */}
         <div className={`absolute bottom-8 left-0 right-0 flex justify-center space-x-2 z-20 transition-opacity duration-300 ${
           isMounted ? "opacity-100" : "opacity-0"
@@ -114,7 +117,7 @@ export default function HeroSlider({ slides, autoplaySpeed = 5000 }: HeroSliderP
       </div>
 
       {/* Text overlay - centered on the slider */}
-      <div className="absolute inset-0 flex items-center justify-center z-10">
+      <div className="absolute inset-0 flex items-center justify-center z-30">
         <div className="text-center text-white p-6 max-w-5xl">
           <h1 className="text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-light mb-6 tracking-wide leading-tight">
             {slides[currentSlide].heading}
