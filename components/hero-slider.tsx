@@ -77,9 +77,11 @@ export default function HeroSlider({ slides, autoplaySpeed = 5000 }: HeroSliderP
         <div className="absolute inset-0 z-10 pointer-events-none bg-gradient-to-r from-black/60 via-black/20 to-transparent" />
 
         {/* Slider navigation dots - always rendered but controlled by opacity */}
-        <div className={`absolute bottom-8 left-0 right-0 flex justify-center space-x-2 z-20 transition-opacity duration-300 ${
-          isMounted ? "opacity-100" : "opacity-0"
-        }`}>
+        <div
+          className={`absolute bottom-8 left-0 right-0 flex justify-center space-x-2 z-20 transition-opacity duration-300 ${
+            isMounted ? "opacity-100" : "opacity-0"
+          }`}
+        >
           {slides.map((_, index) => (
             <button
               key={index}
@@ -89,31 +91,9 @@ export default function HeroSlider({ slides, autoplaySpeed = 5000 }: HeroSliderP
                 index === currentSlide ? "bg-white opacity-100" : "bg-white opacity-50"
               } ${!isMounted ? "pointer-events-none" : ""}`}
               aria-label={`Go to slide ${index + 1}`}
-            ></button>
+            />
           ))}
         </div>
-
-        {/* Left/Right navigation arrows - always rendered but controlled by opacity */}
-        <button
-          onClick={goToPrevSlide}
-          disabled={!isMounted}
-          className={`absolute left-4 top-1/2 transform -translate-y-1/2 bg-black bg-opacity-30 hover:bg-opacity-50 text-white p-2 rounded-full z-20 transition-all ${
-            isMounted ? "opacity-100" : "opacity-0"
-          } ${!isMounted ? "pointer-events-none" : ""}`}
-          aria-label="Previous slide"
-        >
-          <ChevronLeft size={24} />
-        </button>
-        <button
-          onClick={goToNextSlide}
-          disabled={!isMounted}
-          className={`absolute right-4 top-1/2 transform -translate-y-1/2 bg-black bg-opacity-30 hover:bg-opacity-50 text-white p-2 rounded-full z-20 transition-all ${
-            isMounted ? "opacity-100" : "opacity-0"
-          } ${!isMounted ? "pointer-events-none" : ""}`}
-          aria-label="Next slide"
-        >
-          <ChevronRight size={24} />
-        </button>
       </div>
 
       {/* Text overlay - centered on the slider */}
